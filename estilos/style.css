@@ -1,3 +1,5 @@
+/*Login/registro CSS*/
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +7,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*El cuerpo*/
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/img/imagen.jpg);
+    background-image: url(../img/imagen.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,6 +43,7 @@ body {
     padding: 1rem 0;
 }
 
+/*Diseño de botones*/
 .message button {
     padding: 1rem;
     font-weight: 400;
@@ -53,11 +57,11 @@ body {
     transition: all .3s ease-in;
     color: #fff;
 }
-
+/*Al presionar boton se vuelva mas claro*/
 .message button:hover {
     background-color: #6464f8;
 }
-
+/*registro de datos*/
 .formulario {
     width: 400px;
     padding: 1rem;
@@ -95,7 +99,7 @@ body {
     cursor: pointer;
     color: #222;
 }
-
+/*Tamaño para create acount*/
 .create-account {
     padding: 2.7rem 0;
     font-size: 1.7rem;
@@ -120,7 +124,7 @@ body {
     font-size: 1.5rem;
     transition: all .3s ease-in;
 }
-
+/*Cambiar cuando pasa encima de el*/
 .border-icon:hover {
     background-color: #4a4aee;
     cursor: pointer;
@@ -130,7 +134,7 @@ body {
     padding: 2rem 0;
 }
 
-
+/*Cambiar de formularios*/
 
 .sign-in {
     position: absolute;

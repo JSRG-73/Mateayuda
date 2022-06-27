@@ -14,6 +14,7 @@ let mostrarMovimientos = document.getElementById('movimientos');
 let mostrarAciertos = document.getElementById('aciertos');
 //generacion numeros aleatorios
 
+//deben de ser dos objetos similares en operacion y resultado, pues cada carta tiene un objeto
 let numeros = [{"primera":"5-1","segunda":"4"},{"primera":"5-1","segunda":"4"},{"primera":"5-2","segunda":"3"},{"primera":"5-2","segunda":"3"},{"primera":"5-3","segunda":"2"},{"primera":"5-3","segunda":"2"},{"primera":"5-4","segunda":"1"},{"primera":"5-4","segunda":"1"},{"primera":"10-1","segunda":"9"},{"primera":"10-1","segunda":"9"},{"primera":"10-2","segunda":"8"},{"primera":"10-2","segunda":"8"},{"primera":"10-3","segunda":"7"},{"primera":"10-3","segunda":"7"},{"primera":"10-4","segunda":"6"},{"primera":"10-4","segunda":"6"}]
 
 

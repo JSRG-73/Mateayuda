@@ -12,11 +12,12 @@ let temporizador = false;
 
 let mostrarMovimientos = document.getElementById('movimientos');
 let mostrarAciertos = document.getElementById('aciertos');
-//generacion numeros aleatorios
 
 
+//deben de ser dos objetos similares en operacion y resultado, pues cada carta tiene un objeto
 let numeros = [{"primera":"2*1","segunda":"2"},{"primera":"2*1","segunda":"2"},{"primera":"2*2","segunda":"4"},{"primera":"2*2","segunda":"4"},{"primera":"2*3","segunda":"6"},{"primera":"2*3","segunda":"6"},{"primera":"2*4","segunda":"8"},{"primera":"2*4","segunda":"8"},{"primera":"3*1","segunda":"3"},{"primera":"3*1","segunda":"3"},{"primera":"5*1","segunda":"5"},{"primera":"5*1","segunda":"5"},{"primera":"7*1","segunda":"7"},{"primera":"7*1","segunda":"7"},{"primera":"9*1","segunda":"9"},{"primera":"9*1","segunda":"9"}]
 
+//generacion numeros aleatorios
 numeros = numeros.sort(()=>{return Math.random() - 0.5})
 
 

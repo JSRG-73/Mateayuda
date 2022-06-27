@@ -1,13 +1,16 @@
+/*CSS de tarjetas*/
 .main{
     display: flex;
     flex-wrap: wrap;
 }
 
+/*Tabla flex*/
 .tabla{
     display: flex;
     flex-wrap: wrap;
 }
 .suma{
+    /*La imagen del fondo es la seleccionada en el menu*/
     /*background: rgb(63,94,251);*/
     background-image: url("../assets/img/post-1.jpg");
     /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
@@ -22,6 +25,7 @@
 }
 
 .resta{
+    /*La imagen del fondo es la seleccionada en el menu*/
      /*background: rgb(63,94,251);*/
      background-image: url("../assets/img/post-2.jpg");
      /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
@@ -36,6 +40,7 @@
 }
 
 .divi{
+    /*La imagen del fondo es la seleccionada en el menu*/
     /*background: rgb(63,94,251);*/
     background-image: url("../assets/img/post-6.jpg");
     /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
@@ -49,6 +54,7 @@
         color: white
 }
 .multi{
+    /*La imagen del fondo es la seleccionada en el menu*/
     /*background: rgb(63,94,251);*/
     background-image: url("../assets/img/post-3.jpg");
     /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
@@ -66,13 +72,14 @@
 
 
 main{
-   
+   /*Diseño del tablero transparente*/
     margin: 10px auto 50px;
     display: flex;
     align-items: center;
 }
 
 .section1{
+    /*Transparente*/
     background-color: rgb(63,94,251,0.5);
     padding: 0 10px 10px 10px;
     border-radius: 8px;
@@ -81,6 +88,7 @@ h1{
     text-align: center;
 }
 .tarjeta{
+    /*Diseño de tarjetas*/
     height: 100px;
     width: 200px;
     font-size: 40px;
@@ -94,6 +102,7 @@ button:hover{
 }
 
 .section2{
+    /*transparente*/
     background-color: rgb(63,94,251,0.5);
     border-top-right-radius: 8px ;
     border-bottom-right-radius: 8px;
@@ -102,6 +111,7 @@ button:hover{
     padding: 0 20px;
 }
 .estadisticas{
+    /*Texto como puntajes, movimientos*/
     border: 1px solid white;
     height: 105px;
     border-radius: 8px;
@@ -117,6 +127,7 @@ a{
     text-decoration: none;
 }
 
+/*diseño del boton volver*/
 .home {
     position: relative;
     padding: 10px 40px;

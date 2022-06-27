@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!--El css se encuentra en la carperta estilos styles.css-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,9 @@
     <main class="main">
         <section class="section1">
             <h1>Mateayuda</h1>
+            <!--Este es el tablero, acomodado de 4x4-->
             <table>
+                  <!--destapar es una funcion que proviene de restaUno.js, se necesita pasar el id de la tarjeta seleccionada con onclick para destapar, comprobar y sumar-->
                 <tr class="tabla">
                     <td><button id="0" class="tarjeta" onclick="destapar(0)"></button></td>
                     <td><button id="1" class="tarjeta" onclick="destapar(1)"></button></td>
@@ -38,6 +41,7 @@
                 </tr>
             </table>
         </section>
+        <!--Este es el tablero de puntuacion, el boton volver te reinvia al menu-->
         <section class="section2">
             <h2 class="estadisticas" id="aciertos">Aciertos: 0</h2>
             <h2 class="estadisticas" id="movimientos">Movimientos: 0</h2>
@@ -45,6 +49,7 @@
         </section>
     </main>
         <!-- ======= Footer ======= -->
+        <!--Los creditos y copyright, no remover esta seccion-->
     <footer>
         <div class="container">
         <div class="row">
@@ -52,12 +57,7 @@
             <div class="copyright-box">
                 <p class="copyright"> Copyright &copy; MateAyuda - Plataforma Web Educativa - Proyecto Modular 2022 | CUCEI | Universidad de Guadalajara. 
                 <div class="credits">
-                <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
+               
                 </div>
             </div>
             </div>
@@ -68,7 +68,7 @@
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
+    <!-- Javascripts incluidas para realizar animaciones -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -78,6 +78,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <!--Este JS se encuentra en scripts restaUno, es el encargado de volvear cartas , asignar puntuacion, mostrar movimientos, todo lo relacionado al juego en si-->
         <script src="scripts/restaUno.js"></script>
 </body>
 </html>
