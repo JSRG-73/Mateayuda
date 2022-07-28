@@ -39,7 +39,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#testimonio">Participantes</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Memoramas</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Juegos</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -317,17 +317,17 @@
             <div class="card card-blog">
                <!--Las cartas de presentacion para numeros revueltos, en este caso suma, post-1.jpg es la imagen de suma, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="multi_facil.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+                <a href="OrdenamientoSumas.php"><img src="assets/img/TN/SumaTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">numeros revueltos</h6>
+                    <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="multi_facil.php">Nivel 9 Sumas</a></h3>
+                <h3 class="card-title"><a href="OrdenamientoSumas.php">Nivel 9 Sumas</a></h3>
                 <p class="card-description">
-                  Ordena las sumas
+                  Resuelve las sumas y ordena las fichas de menor a mayor.
                 </p>
               </div>
             </div>
@@ -339,17 +339,17 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numeros revueltos, en este caso resta, post-2.jpg es la imagen de restas, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="suma_facil.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+                <a href="OrdenamientoRestas.php"><img src="assets/img/TN/RestaTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">numeros revueltos</h6>
+                    <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="suma_facil.php">Nivel 10 Restas</a></h3>
+                <h3 class="card-title"><a href="OrdenamientoRestas.php">Nivel 10 Restas</a></h3>
                 <p class="card-description">
-                  Ordena las restas
+                  Resuelve las restas y ordena las fichas de menor a mayor.
                 </p>
               </div>
             </div>
@@ -358,17 +358,17 @@
             <div class="card card-blog">
                <!--Las cartas de presentacion para numeros revueltos, en este caso multiplicacion, post-3.jpg es la imagen de multiplicaciones, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="resta_facil.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+                <a href="OrdenamientoMulti.php"><img src="assets/img/TN/MultiplicacionTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">numeros revueltos</h6>
+                    <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="resta_facil.php">Nivel 11 Multiplicaciones</a></h3>
+                <h3 class="card-title"><a href="OrdenamientoMulti.php">Nivel 11 Multiplicaciones</a></h3>
                 <p class="card-description">
-                   Ordena las multiplicaciones
+                  Resuelve las multiplicaciones y ordena las fichas de menor a mayor.
                 </p>
               </div>
             </div>
@@ -378,17 +378,17 @@
             <div class="card card-blog">
                <!--Las cartas de presentacion para numeros revueltos, en este caso division, post-6.jpg es la imagen de division, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="multi_facil.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
+                <a href="OrdenamientoDiv.php"><img src="assets/img/TN/DivicionTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">numeros revueltos</h6>
+                    <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="multi_facil.php">Nivel 12 Divisiones</a></h3>
+                <h3 class="card-title"><a href="OrdenamientoDiv.php">Nivel 12 Divisiones</a></h3>
                 <p class="card-description">
-                  Ordena las divisiones
+                  Resuelve las diviciones y ordena las fichas de menor a mayor.
                 </p>
               </div>
             </div>

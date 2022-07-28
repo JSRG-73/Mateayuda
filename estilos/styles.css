@@ -151,3 +151,165 @@ a{
     transform: translate(0px,5px);
     border-bottom: 1px solid #2ecc71;
    }
+
+/*Ordenamiento*/
+.Fichas{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #333;
+    border-radius: 0.5rem;
+    margin: 1.25rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    user-select: none;
+    cursor: move;
+    transition: 0.5s;
+  }
+  .box span {
+    pointer-events: none;
+  }
+  
+  /* Drag and Drop Related Styling */
+  
+  .drag-start {
+    opacity: 0.4;
+  }
+  .drag-enter {
+    border-style: dashed;
+  }
+  .box:nth-child(odd).drag-enter {
+    transform: scale(0.75);
+    transform: rotate(15deg);
+  }
+  .box:nth-child(even).drag-enter {
+    transform: scale(0.75);
+    transform: rotate(-15deg);
+  }
+  .box:nth-child(odd).drag-start {
+    transform: scale(0.75);
+    transform: rotate(15deg) scale(0.75);
+  }
+  .box:nth-child(even).drag-start {
+    transform: scale(0.75);
+    transform: rotate(-15deg) scale(0.75);
+  }
+  .gameBtn{
+    display: flex;
+    position: relative;
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 3px;
+    font-size: 30px;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #f19924;
+    border: none;
+    border-bottom: 5px solid #c0791b;
+    text-shadow: 0px -2px #c0791b;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  
+  .gameBtn:hover, .gameBtn:active {
+    -webkit-transform: translate(0px,5px);
+    -ms-transform: translate(0px,5px);
+    transform: translate(0px,5px);
+    border-bottom: 1px solid #2ecc71;
+   }
+  
+  @media (max-width: 600px) {
+    html { 
+      font-size: 14px; 
+    }
+    .box {
+      width: 4rem; 
+      height: 4rem; 
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
+  }
+  
+  .ord_suma{
+    /*background: rgb(63,94,251);*/
+    background-image: url("../assets/img/BG/BGBlue.png");
+    /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     
+     background-size: cover;
+     /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+     font-family: sans-serif;
+     color: white
+  }
+  .ord_resta{
+    /*background: rgb(63,94,251);*/
+    background-image: url("../assets/img/BG/BGGreen.png");
+    /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     
+     background-size: cover;
+     /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+     font-family: sans-serif;
+     color: white
+  }
+  .ord_multiplicacion{
+    /*background: rgb(63,94,251);*/
+    background-image: url("../assets/img/BG/BGYellow.png");
+    /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     
+     background-size: cover;
+     /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+     font-family: sans-serif;
+     color: white
+  }
+  .ord_divicion{
+    /*background: rgb(63,94,251);*/
+    background-image: url("../assets/img/BG/BGRed.png");
+    /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     
+     background-size: cover;
+     /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+     font-family: sans-serif;
+     color: white
+  }
+/*Footer*/
+  footer {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background:  rgb(63,94,251,0.5);
+  }
+  footer .copyright {
+    margin-bottom: 0.3rem;
+  }
+  footer .credits {
+    margin-bottom: 0;
+  }
+  footer .credits a {
+    color: #fff;
+  }
+    
