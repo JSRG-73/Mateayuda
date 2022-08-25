@@ -1,0 +1,282 @@
+body{
+    padding-top: 100px;
+    text-align: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size:var();
+    background-position: center;
+    font-size: 100px;
+    font-family: sans-serif;
+}
+
+
+
+.resta_page {
+    background-image: url("../assets/img/BG/BGNmisteriossoResta.png");
+    color:crimson;
+}
+
+.suma_page{
+    background-image: url("../assets/img/BG/BGNmisteriossoSuma.png");
+    color: rgb(37, 111, 200);
+}
+
+.div_page{
+    background-image: url("../assets/img/BG/BGNmisteriossoDiv.png");
+    color: rgb(36, 182, 182);
+}
+
+.multi_page{
+    background-image: url("../assets/img/BG/BGNmisteriossoMulti.png");
+    color: darkmagenta;
+}
+
+#ecuacion{
+    position:sticky;
+}
+
+.resta_container{
+
+    width: 50%;
+    background-color: rgba(248, 248, 61, 0.7);
+    padding: 40px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    float: left;
+    
+}
+
+.suma_container{
+
+    width: 50%;
+    background-color: rgba(226, 241, 143, 0.6);
+    padding: 40px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    float: left;
+    
+}
+
+.multiplicacion_container{
+
+    width: 50%;
+    background-color: rgba(226, 241, 143, 0.6);
+    padding: 40px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    float: left;
+    
+}
+
+.division_container{
+
+    width: 50%;
+    background-color: rgba(241, 224, 36, 0.75);
+    padding: 40px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    float: left;
+    
+}
+
+.aside_resta{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: rgba(248, 248, 61, 0.7);
+    padding: 40px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    float: left;
+}
+.aside_suma{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: rgba(226, 241, 143, 0.6);
+    padding: 40px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    float: left;
+}
+.aside_division{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: rgba(241, 224, 36, 0.75);
+    padding: 40px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 30px;
+    float: left;
+}
+
+.contenedor_fijo{
+    display:inline;
+    position:sticky;
+    min-height: 150px;
+    width: 100%;
+}
+
+.tittle_resta {
+
+    color:rgb(173, 1, 196);
+    font-weight: bold;
+    text-shadow: #666;
+    font-size: 50px;
+    font-family: sans-serif;
+    /*margin: auto;*/
+    width: 100%;
+    background: rgba(243, 281, 81, 0.5);
+    position: sticky;
+    /*(recomended)*/
+    top: 0px;
+    position: fixed;
+    padding-bottom: 5px;
+
+}
+
+.tittle_suma {
+
+    color:rgb(114, 114, 114);
+    font-weight: bold;
+    text-shadow: #666;
+    font-size: 50px;
+    font-family: sans-serif;
+    /*margin: auto;*/
+    width: 100%;
+    background: rgba(226, 241, 143, 0.8);
+    position: sticky;
+    /*(recomended)*/
+    top: 0px;
+    position: fixed;
+    padding-bottom: 5px;
+
+}
+
+.tittle_multi {
+
+    color:darkmagenta;
+    font-weight: bold;
+    text-shadow: #666;
+    font-size: 50px;
+    font-family: sans-serif;
+    /*margin: auto;*/
+    width: 100%;
+    background:rgba(248, 248, 61, 0.7);
+    position: sticky;
+    /*(recomended)*/
+    top: 0px;
+    position: fixed;
+    padding-bottom: 5px;
+
+}
+
+.tittle_divi {
+
+    color:rgb(102, 156, 21);
+    font-weight: bold;
+    text-shadow: #666;
+    font-size: 50px;
+    font-family: sans-serif;
+    /*margin: auto;*/
+    width: 100%;
+    background:rgba(241, 224, 36, 0.75);
+    position: sticky;
+    /*(recomended)*/
+    top: 0px;
+    position: fixed;
+    padding-bottom: 5px;
+
+}
+
+.drop_area {
+    background-color: rgb(200, 214, 140);
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #02310f;
+    display: inline-block;
+}
+
+.number {
+    height: 100px;
+    width: 100px;
+}
+
+#mensaje_respuesta {
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.boton {
+    
+    font-size: 20px;
+    color: white;
+    user-select: none;
+    border-radius: 7px;
+    
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    padding: 20px 25px;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    margin:0 20px;
+}
+.boton:active {
+    top: 3px;
+    box-shadow: 0 2px 0px #387796;
+    transition: all .2s;
+}   
+
+#Boton_recargar{
+    background: darkorange;
+    box-shadow: 0 7px 0px rgb(150, 83, 0);
+}
+
+#Boton_volver{
+    background: red;
+    box-shadow: 0 7px 0px rgb(150, 10, 0);
+}
+
+#juego{
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    color:rgb(250, 246, 240);
+    padding: 0;
+    background-color: teal;
+    font-size: x-small;
+    position: sticky;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+footer .copyright {
+    margin-bottom: 0.3rem;
+}
+
+footer .credits {
+    margin-bottom: 0;
+}
+
+footer .credits a {
+    color: #fff;
+}
