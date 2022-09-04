@@ -27,17 +27,15 @@
 
 </head>
 
-<body>
-
-  <?php
-
+<!--Esto sirve para que no se pueda acceder a esta página si no se ha iniciado sesión.-->
+<?php
   session_start();
-  if ($_SESSION["logged"]) {
-    echo "<script>console.log('" . $_SESSION["logged"] . "' );</script>";
-  } else {
+  if (!$_SESSION["logged"]) {
     header("Location: index.php");
-  }
+  } 
   ?>
+
+<body>
 
 
   <!-- ======= Header ======= -->

@@ -1,18 +1,11 @@
 <?php
-/*
-    //Conectar a la base de datos de usuarios, variables con valores a usar
-    $servidor="localhost";
-    $usuario="root";
-    $clave="";
-    $baseDatos="form";
+//Esto establece conexión a base de datos.
+require "Funciones/Conectar.php";
+$con = conectar();
 
-    //enlace va a ser la variable usada para conectar
-    $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDatos);
-    //un if por si algo falla
-    if(!$enlace){
-        echo "<script>console.log('Console: Falla en la conexión a base de datos :(' );</script>";
-    }
-*/
+session_start();
+$_SESSION["logged"]=NULL;
+
 ?>
 
 <!DOCTYPE html>
@@ -85,8 +78,6 @@
 
 <?php
 
-session_start();
-
 //Este php inserta en la tabla usuario los datos si vas a registrate
 if (isset($_POST['botonCuenta'])) {
     $nombre = $_POST["nombre"];
@@ -94,7 +85,7 @@ if (isset($_POST['botonCuenta'])) {
     $contrasena = $_POST["constrasena"];
 
     $insertarDatos = "INSERT INTO usuario VALUES('$nombre','$edad','$contrasena')";
-    $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);
+    $ejecutarInsertar = mysqli_query($con, $insertarDatos);
     //Una vez registrado, te redirige a menu
     if ($ejecutarInsertar) {
         header("Location: menu.php");
@@ -112,10 +103,6 @@ if (isset($_POST['botonCuenta'])) {
 
 <?php
 
-require "Funciones/Conectar.php";
-$con = conectar();
-$_SESSION["logged"]=NULL;
-
 //Este php valida que se encuentre un usuario y constraseña en la base de datos 
 if (isset($_POST['botonLogin'])) {
     $nombre = $_POST["nombre"];
@@ -132,7 +119,8 @@ if (isset($_POST['botonLogin'])) {
     $_SESSION["logged"] = true;
 
     } else {
-        echo "Hay un error";
+        echo '<script>console.log("Error");</script>';
+        //echo '<script>alert("Error");</script>';
     }
 }
 ?>
