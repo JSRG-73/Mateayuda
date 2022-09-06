@@ -8,32 +8,32 @@
   <title>Juego de arrastrar</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  <link rel="stylesheet" href="estilos/NM.css">
+  <link rel="stylesheet" href="../../estilos/NM.css">
 
-  <script src="scripts/NM.js"></script>
+  <script src="../../scripts/NM.js"></script>
 </head>
 
-<body class="resta_page" onload="inicio()">
+<body class="div_page" onload="inicio()">
 
-  <header class="tittle_resta">
+  <header class="tittle_divi">
 
   &#10067 &#10067 &#10067 &#10067 &#10067 Numero misterioso  &#10067 &#10067 &#10067 &#10067 &#10067
 
   </header>
 
-  <main class="resta_container">
+  <main class="division_container">
 
     <?php
 
     //Aqui se definen los rangos de los numeros
     $array1_size = 5;
-    $min = 0;
-    $max = 100;
+    $min = 1;
+    $max = 10;
 
     //Aqui se generan los numeros en cada partida
-    $numero_fijo = rand($min, $max);
-    $result = rand($min, $numero_fijo);
-    $respuesta = $numero_fijo - $result;
+    $result = rand($min, $max);
+    $respuesta = rand($min, $max);
+    $numero_fijo = $respuesta * $result;
 
     //Aqui se generan los numeros que se van a ofrecer como posibles respuestas para al usuario y se ordenan aleatoriamente
     $array1 = array($respuesta);
@@ -50,7 +50,7 @@
     echo '<div id="juego">';
 
       echo'<div id="ecuacion">';
-        echo $numero_fijo . " - ";
+        echo $numero_fijo . " ÷ ";
         echo ' <div class="drop_area" ondrop="drop(event)" ondragover="allowDrop(event)" ></div> ';
         echo " = " . $result;
       echo'</div>';
@@ -58,7 +58,7 @@
       //Aqui se imprimen los números arrastrables.
       echo'<div class = "contenedor_fijo">';
         foreach ($array1 as $x) 
-          {echo '<img id = "' . $x . '" class = "number" src="assets/img/numeros/icons8-' . $x . '-100.png" draggable="true" ondragstart="drag(event)" >';}
+          {echo '<img id = "' . $x . '" class = "number" src="../../assets/img/numeros/icons8-' . $x . '-100.png" draggable="true" ondragstart="drag(event)" >';}
       echo'</div>';
         
       //Este mensaje permanece oculto hasta que el usuario acierta o falla.
@@ -72,7 +72,7 @@
   </main>
 
   <!--Esta es la sección de los botones-->
-  <aside class="aside_resta">
+  <aside class="aside_division">
     <div id="botones">
       <div class="boton" id="Boton_recargar" onClick="window.location.reload();" >Intentar de nuevo</div>
       <div class="boton" id="Boton_volver" onclick="window.history.back()">Volver</div>

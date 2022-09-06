@@ -167,7 +167,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para memorama, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="suma_facil.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Memorama/suma_facil.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -175,7 +175,7 @@
                     <h6 class="category">Memorama</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="suma_facil.php">Nivel 1 Sumas</a></h3>
+                <h3 class="card-title"><a href="Juegos/Memorama/suma_facil.php">Nivel 1 Sumas</a></h3>
                 <p class="card-description">
                   Juguemos con cartas de sumas
                 </p>
@@ -186,7 +186,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para memorama, en este caso resta, post-2.jpg es la imagen de restas, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="resta_facil.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Memorama/resta_facil.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -194,7 +194,7 @@
                     <h6 class="category">Memorama</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="resta_facil.php">Nivel 2 Restas</a></h3>
+                <h3 class="card-title"><a href="Juegos/Memorama/resta_facil.php">Nivel 2 Restas</a></h3>
                 <p class="card-description">
                   Juguemos con cartas de restas
                 </p>
@@ -206,7 +206,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para memorama, en este caso multiplicacion, post-3.jpg es la imagen de multiplicacion, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="multi_facil.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Memorama/multi_facil.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -214,7 +214,7 @@
                     <h6 class="category">Memorama</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="multi_facil.php">Nivel 3 Multiplicaciones</a></h3>
+                <h3 class="card-title"><a href="Juegos/Memorama/multi_facil.php">Nivel 3 Multiplicaciones</a></h3>
                 <p class="card-description">
                   Juguemos con cartas de multiplicaciones
                 </p>
@@ -227,7 +227,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para memorama, en este caso division, post-6.jpg es la imagen de divisones, h3 esta el tema(divison), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="divison_facil.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Memorama/divison_facil.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -235,7 +235,7 @@
                     <h6 class="category">Memorama</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="divison_facil.php">Nivel 4 Divisiones</a></h3>
+                <h3 class="card-title"><a href="Juegos/Memorama/divison_facil.php">Nivel 4 Divisiones</a></h3>
                 <p class="card-description">
                   Juguemos con cartas de divisiones
                 </p>
@@ -246,7 +246,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="NM_sum.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Numero misterioso/NM_sum.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -254,7 +254,7 @@
                     <h6 class="category">Numero misterioso</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="resta_facil.php">Nivel 5 Sumas</a></h3>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_sum.php">Nivel 5 Sumas</a></h3>
                 <p class="card-description">
                   ¿Faltan números en las sumas?
                 </p>
@@ -266,7 +266,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso resta, post-2.jpg es la imagen de resta, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="NM_res.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Numero misterioso/NM_res.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -274,7 +274,7 @@
                     <h6 class="category">numero misterioso</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="multi_facil.php">Nivel 6 Restas</a></h3>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_res.php">Nivel 6 Restas</a></h3>
                 <p class="card-description">
                   ¿Faltan números en las restas?
                 </p>
@@ -287,7 +287,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso multiplicacion, post-3.jpg es la imagen de mutiplicacions, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="NM_mul.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Numero misterioso/NM_mul.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -295,7 +295,7 @@
                     <h6 class="category">numero misterio</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="suma_facil.php">Nivel 7 Multiplicaciones</a></h3>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_mul.php">Nivel 7 Multiplicaciones</a></h3>
                 <p class="card-description">
                   ¿Faltan números en las multiplicaciones?
                 </p>
@@ -306,7 +306,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso division, post-6.jpg es la imagen de divisiones, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="NM_div.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Numero misterioso/NM_div.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -314,7 +314,7 @@
                     <h6 class="category">numero misterioso</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="resta_facil.php">Nivel 8 Divisones</a></h3>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_div.php">Nivel 8 Divisones</a></h3>
                 <p class="card-description">
                   ¿Faltan números en las divisiones?
                 </p>
@@ -326,7 +326,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numeros revueltos, en este caso suma, post-1.jpg es la imagen de suma, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="OrdenamientoSumas.php"><img src="assets/img/TN/SumaTN.png" alt="" class="img-fluid"></a>
+                <a href="Juegos/Ordenamiento/OrdenamientoSumas.php"><img src="assets/img/TN/SumaTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -334,7 +334,7 @@
                     <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="OrdenamientoSumas.php">Nivel 9 Sumas</a></h3>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoSumas.php">Nivel 9 Sumas</a></h3>
                 <p class="card-description">
                   Resuelve las sumas y ordena las fichas de menor a mayor.
                 </p>
@@ -348,7 +348,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numeros revueltos, en este caso resta, post-2.jpg es la imagen de restas, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="OrdenamientoRestas.php"><img src="assets/img/TN/RestaTN.png" alt="" class="img-fluid"></a>
+                <a href="Juegos/Ordenamiento/OrdenamientoRestas.php"><img src="assets/img/TN/RestaTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -356,7 +356,7 @@
                     <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="OrdenamientoRestas.php">Nivel 10 Restas</a></h3>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoRestas.php">Nivel 10 Restas</a></h3>
                 <p class="card-description">
                   Resuelve las restas y ordena las fichas de menor a mayor.
                 </p>
@@ -367,7 +367,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numeros revueltos, en este caso multiplicacion, post-3.jpg es la imagen de multiplicaciones, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="OrdenamientoMulti.php"><img src="assets/img/TN/MultiplicacionTN.png" alt="" class="img-fluid"></a>
+                <a href="Juegos/Ordenamiento/OrdenamientoMulti.php"><img src="assets/img/TN/MultiplicacionTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -375,7 +375,7 @@
                     <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="OrdenamientoMulti.php">Nivel 11 Multiplicaciones</a></h3>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoMulti.php">Nivel 11 Multiplicaciones</a></h3>
                 <p class="card-description">
                   Resuelve las multiplicaciones y ordena las fichas de menor a mayor.
                 </p>
@@ -387,7 +387,7 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numeros revueltos, en este caso division, post-6.jpg es la imagen de division, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="OrdenamientoDiv.php"><img src="assets/img/TN/DivisionTN.png" alt="" class="img-fluid"></a>
+                <a href="Juegos/Ordenamiento/OrdenamientoDiv.php"><img src="assets/img/TN/DivisionTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -395,7 +395,7 @@
                     <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="OrdenamientoDiv.php">Nivel 12 Divisiones</a></h3>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoDiv.php">Nivel 12 Divisiones</a></h3>
                 <p class="card-description">
                   Resuelve las diviciones y ordena las fichas de menor a mayor.
                 </p>

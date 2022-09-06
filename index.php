@@ -46,7 +46,7 @@ $_SESSION["logged"]=NULL;
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
             <input type="text" autocomplete="off" placeholder="Nombre" name="nombre">
             <input type="password" autocomplete="off" placeholder="Contraseña" name="constrasena">
-            <input type="number" min="7" placeholder="Edad" name="edad">
+            <input type="number" min="3" max="10" placeholder="Edad" name="edad">
             <input type="submit" value="Registrarse" name="botonCuenta">
         </form>
     </div>

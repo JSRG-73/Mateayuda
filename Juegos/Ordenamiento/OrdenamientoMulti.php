@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <link rel="stylesheet" href="estilos\styles.css">
+    <link rel="stylesheet" href="../../estilos\styles.css">
     <title>MateAyuda</title>
 </head>
 
@@ -13,15 +13,15 @@
 <?php
   session_start();
   if (!$_SESSION["logged"]) {
-    header("Location: index.php");
+    header("Location: ../../index.php");
   } 
   ?>
   
-<body class="ord_resta">
+<body class="ord_multiplicacion">
     <main>
         <!--Seccion de la caja azul principal-->
         <!--Id= "sumas" "restas" "multiplicaciones" "diviciones"-->
-        <section class="section1" id="restas">
+        <section class="section1" id="multiplicaciones">
             <h1><span class="instrucciones">Ordene las operaciones de menor a mayor</span></h1>
             <!--Seccion donde se encuentran las fichas-->
             <!--Clase box especificada en el archivo css, draggable habilitado, Style = Color de cada caja, Id=Identificador de la caja y el texto en la caja-->
@@ -44,7 +44,7 @@
         <section class="section2">
             <h2 class="estadisticas" id="aciertos"><span class="titulo">Puntuación: </span><span class="correct">0</span></h2>
             <h2 class="estadisticas" id="intentos"><span class="titulo">Intentos: </span><span class="tries">0</span></h2>
-            <h2  id="home"  ><button onclick="location.href='menu.php'" class="home">Volver</button> </h2>
+            <h2  id="home"  ><button onclick="window.history.back()" class="home">Volver</button> </h2>
         </section>
     </main>
   <!-- ======= Footer ======= -->
@@ -67,6 +67,6 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
-    <script src="scripts\OrdenamientoBasico.js"></script>
+    <script src="../../scripts\OrdenamientoBasico.js"></script>
 </body>
 </html>
