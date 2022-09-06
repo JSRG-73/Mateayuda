@@ -35,7 +35,7 @@
         <section class="section2">
             <h2 class="estadisticas" id="aciertos"><span class="titulo">Puntuación: </span><span class="correct">0</span></h2>
             <h2 class="estadisticas" id="intentos"><span class="titulo">Intentos: </span><span class="tries">0</span></h2>
-            <h2  id="home"  ><button onclick="location.href='menu.php'" class="home">Volver</button> </h2>
+            <h2  id="home"  ><button onclick="window.history.back()" class="home">Volver</button> </h2>
         </section>
     </main>
   <!-- ======= Footer ======= -->

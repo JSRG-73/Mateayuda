@@ -1,111 +1,29 @@
 /*CSS de tarjetas*/
 .main{
     display: flex;
-    flex-wrap: wrap;
-}
-
-/*Tabla flex*/
-.tabla{
-    display: flex;
-    flex-wrap: wrap;
-}
-.suma{
-    /*La imagen del fondo es la seleccionada en el menu*/
-    /*background: rgb(63,94,251);*/
-    background-image: url("../assets/img/post-1.jpg");
-    /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     
-     background-size: cover;
-     /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
-     font-family: sans-serif;
-     color: white
-}
-
-.resta{
-    /*La imagen del fondo es la seleccionada en el menu*/
-     /*background: rgb(63,94,251);*/
-     background-image: url("../assets/img/post-2.jpg");
-     /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
-         background-position: center center;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         
-         background-size: cover;
-         /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
-         font-family: sans-serif;
-         color: white
-}
-
-.divi{
-    /*La imagen del fondo es la seleccionada en el menu*/
-    /*background: rgb(63,94,251);*/
-    background-image: url("../assets/img/post-6.jpg");
-    /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        
-        background-size: cover;
-        /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
-        font-family: sans-serif;
-        color: white
-}
-.multi{
-    /*La imagen del fondo es la seleccionada en el menu*/
-    /*background: rgb(63,94,251);*/
-    background-image: url("../assets/img/post-3.jpg");
-    /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     
-     background-size: cover;
-     /*background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
-     font-family: sans-serif;
-     color: white
-}
-
-
-
-
-main{
-   /*Diseño del tablero transparente*/
+    flex-wrap: wrap; 
     margin: 10px auto 50px;
-    display: flex;
-    align-items: center;
-}
-
-.section1{
-    /*Transparente*/
-    background-color: rgb(63,94,251,0.5);
-    padding: 0 10px 10px 10px;
-    border-radius: 8px;
-    box-sizing: content-box;
-    height: auto;
-    min-width: 250px;
+     align-items: center;
 }
 h1{
     text-align: center;
 }
-.tarjeta{
-    /*Diseño de tarjetas*/
-    height: 100px;
-    width: 200px;
-    font-size: 40px;
-    color: black;
-    font-weight: bold;
-    color:white;
-}
+#box-container {
+    display: flex;
+    height: 500px;
 
-button:hover{
-    cursor: pointer;
-}
-
-.section2{
-    /*transparente*/
+  }
+  .section1
+  {
+    background-color: rgb(63,94,251,0.5);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+    flex-grow: 1;
+    height: auto;
+    box-sizing: content-box; 
+  }
+  .section2
+  {
     background-color: rgb(63,94,251,0.5);
     border-top-right-radius: 8px ;
     border-bottom-right-radius: 8px;
@@ -113,7 +31,26 @@ button:hover{
     height: 400px;
     padding: 0 20px;
 
-}
+  }
+
+  #box-1 {
+  background-color: rgb(63,94,251,0.5);
+  padding: 0 10px 10px 10px;
+  border-radius: 8px;
+  flex-grow: 1;
+  height: auto;
+  box-sizing: content-box;
+  }
+
+  #box-2 {
+    background-color: rgb(63,94,251,0.5);
+    border-top-right-radius: 8px ;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+    height: 400px;
+    padding: 0 20px;
+
+  }
 .estadisticas{
     /*Texto como puntajes, movimientos*/
     border: 1px solid white;
@@ -122,16 +59,6 @@ button:hover{
     padding: 8px 20px;
     box-sizing: border-box;
 }
-
-footer{
-    text-align: center;
-
-}
-a{
-    text-decoration: none;
-}
-
-/*diseño del boton volver*/
 .home {
     position: relative;
     padding: 10px 40px;
@@ -156,8 +83,7 @@ a{
     border-bottom: 1px solid #2ecc71;
    }
 
-/*Ordenamiento*/
-.Fichas{
+   .Fichas{
     box-sizing: content-box;
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
@@ -168,7 +94,7 @@ a{
     align-items: center;
   }
   .box {
-    width: 10vw;
+    width: 10%;
     height: 10rem;
     border: 3px solid #333;
     border-radius: 0.5rem;
@@ -178,41 +104,30 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 4vw;
+    font-size: 4rem;
     font-weight: bold;
     user-select: none;
     cursor: move;
     transition: 0.5s;
-  }
-  .box span {
-    pointer-events: none;
-  }
-  
-  /* Drag and Drop Related Styling */
-  
-  .drag-start {
-    opacity: 0.4;
-  }
-  .drag-enter {
-    border-style: dashed;
-  }
-  .box:nth-child(odd).drag-enter {
-    transform: scale(0.75);
-    transform: rotate(15deg);
-  }
-  .box:nth-child(even).drag-enter {
-    transform: scale(0.75);
-    transform: rotate(-15deg);
-  }
-  .box:nth-child(odd).drag-start {
-    transform: scale(0.75);
-    transform: rotate(15deg) scale(0.75);
-  }
-  .box:nth-child(even).drag-start {
-    transform: scale(0.75);
-    transform: rotate(-15deg) scale(0.75);
+    /*
+    width: 10%;
+    height: 10rem;
+    border: 3px solid #333;
+    border-radius: 0.5rem;
+    margin: 1.25rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    user-select: none;
+    cursor: move;
+    transition: 0.5s;*/
   }
   .gameBtn{
+    align-items: center;
     display: flex;
     position: relative;
     height: auto;
@@ -237,24 +152,8 @@ a{
     transform: translate(0px,5px);
     border-bottom: 1px solid #2ecc71;
    }
-  
-  /*@media (max-width: 600px) {
-    html { 
-      font-size: 14px; 
-    }
-    .box {
-      width: 4rem; 
-      height: 4rem; 
-      font-size: 2rem;
-      margin: 0.5rem;
-    }
-    .Fichas
-    {
-      flex-direction: column;
-    }
-  }*/
-  
-  .ord_suma{
+
+   .ord_suma{
     /*background: rgb(63,94,251);*/
     background-image: url("../assets/img/BG/BGBlue.png");
     /*,linear-gradient(rgba(137, 170, 19, 0.2))*/
@@ -306,7 +205,7 @@ a{
      font-family: sans-serif;
      color: white
   }
-/*Footer*/
+   /*Footer*/
   footer {
     text-align: center;
     color: #fff;
@@ -323,6 +222,7 @@ a{
     color: #fff;
   }
 
+  /*Cuendo la pantalla alcance un tamaño minimo de 800px, reajusta el tamaño de las fichas*/
   @media (max-width: 800px) {
     html { 
       font-size: 14px; 
@@ -330,6 +230,7 @@ a{
     .box {
       width: 5rem; 
       height: 5rem; 
+      font-size: 2.5rem;
       margin: 0.5rem;
     }
     .Fichas
@@ -337,5 +238,35 @@ a{
       flex-direction: column;
     }
   }
+  /*Cuendo la pantalla alcance un tamaño minimo de 800px, reajusta el tamaño de las fichas y las ordena verticcalmente*/
+  @media (max-width: 1000px) {
+    .box {
+      font-size: 2.5rem;
+    }
+  }
 
-    
+   
+  /* Drag and Drop Related Styling */
+  
+  .drag-start {
+    opacity: 0.4;
+  }
+  .drag-enter {
+    border-style: dashed;
+  }
+  .box:nth-child(odd).drag-enter {
+    transform: scale(0.75);
+    transform: rotate(15deg);
+  }
+  .box:nth-child(even).drag-enter {
+    transform: scale(0.75);
+    transform: rotate(-15deg);
+  }
+  .box:nth-child(odd).drag-start {
+    transform: scale(0.75);
+    transform: rotate(15deg) scale(0.75);
+  }
+  .box:nth-child(even).drag-start {
+    transform: scale(0.75);
+    transform: rotate(-15deg) scale(0.75);
+  }

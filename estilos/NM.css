@@ -5,7 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size:var();
     background-position: center;
-    font-size: 100px;
+    font-size: 7vw;
     font-family: sans-serif;
 }
 
@@ -13,21 +13,41 @@ body{
 
 .resta_page {
     background-image: url("../assets/img/BG/BGNmisteriossoResta.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
     color:crimson;
 }
 
 .suma_page{
     background-image: url("../assets/img/BG/BGNmisteriossoSuma.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
     color: rgb(37, 111, 200);
 }
 
 .div_page{
     background-image: url("../assets/img/BG/BGNmisteriossoDiv.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
     color: rgb(36, 182, 182);
 }
 
 .multi_page{
     background-image: url("../assets/img/BG/BGNmisteriossoMulti.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
     color: darkmagenta;
 }
 
@@ -129,7 +149,7 @@ body{
     color:rgb(173, 1, 196);
     font-weight: bold;
     text-shadow: #666;
-    font-size: 50px;
+    font-size: 4vw;
     font-family: sans-serif;
     /*margin: auto;*/
     width: 100%;
@@ -144,14 +164,14 @@ body{
 
 .tittle_suma {
 
-    color:rgb(114, 114, 114);
+    color:rgb(255, 255, 255);
     font-weight: bold;
     text-shadow: #666;
-    font-size: 50px;
+    font-size: 4vw;
     font-family: sans-serif;
     /*margin: auto;*/
     width: 100%;
-    background: rgba(226, 241, 143, 0.8);
+    background: rgb(226, 241, 143);
     position: sticky;
     /*(recomended)*/
     top: 0px;
@@ -165,7 +185,7 @@ body{
     color:darkmagenta;
     font-weight: bold;
     text-shadow: #666;
-    font-size: 50px;
+    font-size: 4vw;
     font-family: sans-serif;
     /*margin: auto;*/
     width: 100%;
@@ -183,7 +203,7 @@ body{
     color:rgb(102, 156, 21);
     font-weight: bold;
     text-shadow: #666;
-    font-size: 50px;
+    font-size: 4vw;
     font-family: sans-serif;
     /*margin: auto;*/
     width: 100%;
@@ -197,24 +217,35 @@ body{
 }
 
 .drop_area {
-    background-color: rgb(200, 214, 140);
-    width: 100px;
-    height: 100px;
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 10vw;
+    height: 10vw;
     padding: 10px;
-    border: 2px solid #02310f;
+    border: 3px dashed rgb(0, 0, 0);
+    border-radius:  15px;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid #02310f;*/
     display: inline-block;
+    transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
 }
+.drop_area-hover {
+    background-color: #bee3f0;
+    transform: scale(1.1);
+  }
 
 .number {
-    height: 100px;
-    width: 100px;
+    max-width: 100%;
+    height: auto;
 }
 
 #mensaje_respuesta {
     display: block;
-    font-size: 30px;
+    font-size: 4vw;
     padding: 10px;
-    width: fit-content;
+    width: 100%;
     margin: auto;
     margin-bottom: 25px;
     margin-top: 15px;
@@ -280,3 +311,69 @@ footer .credits {
 footer .credits a {
     color: #fff;
 }
+
+@media (max-width: 1000px) {
+    
+    body{
+        flex-direction: column-reverse;
+    }
+    .resta_container{
+
+        width: 100%;
+        height: fit-content;
+        margin: 10px;
+    }
+    
+    .suma_container{
+    
+        width: 100%;
+        height: fit-content;
+        margin: 10px;
+    }
+    
+    .multiplicacion_container{
+    
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .division_container{
+    
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .aside_resta{
+        display: grid; 
+        width: 100%;
+        flex-direction: row;
+        justify-items: center;
+        height: fit-content;
+        padding: 20px;
+        align-items: center;
+
+    }
+    .aside_suma{
+        display: grid; 
+        width: 100%;
+        flex-direction: row;
+        justify-items: center;
+        height: fit-content;
+        padding: 20px;
+        align-items: center;
+    }
+    .aside_division{
+        display: grid; 
+        width: 100%;
+        flex-direction: row;
+        justify-items: center;
+        height: fit-content;
+        padding: 20px;
+        align-items: center;
+    }
+    .boton
+    {
+        padding: 10px 15px;
+        margin: auto;
+    }
+  }
