@@ -24,17 +24,26 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
- 
+
 </head>
 
+<!--Esto sirve para que no se pueda acceder a esta página si no se ha iniciado sesión.-->
+<?php
+  session_start();
+  if (!$_SESSION["logged"]) {
+    header("Location: index.php");
+  } 
+  ?>
+
 <body>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-     <!--Va el navbar de Mateayuda, (la barra negra), los href sirven para navegar por id-->
+      <!--Va el navbar de Mateayuda, (la barra negra), los href sirven para navegar por id-->
       <h1 class="logo"><a href="index.html">MateAyuda</a></h1>
-      
+
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
@@ -65,23 +74,23 @@
   </div><!-- End Hero Section -->
 
   <main id="main">
-   
-   
+
+
 
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonio" >
+    <section id="testimonio">
       <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/post-4.jpg)">
         <div class="overlay-mf"></div>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-               <!--Swipper permite cambiar con los div que contengan la clase como el efecto carril javascript, sirve para presentar, class author sirve para mostrar el nombre del desarrollador-->
+              <!--Swipper permite cambiar con los div que contengan la clase como el efecto carril javascript, sirve para presentar, class author sirve para mostrar el nombre del desarrollador-->
 
               <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
+                  <div class="swiper-slide">
                     <div class="testimonial-box">
                       <div class="author-test">
                         <img src="assets/img/puppy1.jpg" alt="" class="rounded-circle b-shadow-a">
@@ -123,17 +132,17 @@
                     </div>
                   </div><!-- End testimonial item -->
 
-                 
+
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
 
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+              <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
           
         </div> -->
+            </div>
           </div>
         </div>
-      </div>
       </div><!-- End Testimonials Section -->
     </section>
 
@@ -175,7 +184,7 @@
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para memorama, en este caso resta, post-2.jpg es la imagen de restas, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para memorama, en este caso resta, post-2.jpg es la imagen de restas, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="resta_facil.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
               </div>
@@ -192,10 +201,10 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para memorama, en este caso multiplicacion, post-3.jpg es la imagen de multiplicacion, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para memorama, en este caso multiplicacion, post-3.jpg es la imagen de multiplicacion, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="multi_facil.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
               </div>
@@ -218,24 +227,24 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para memorama, en este caso division, post-6.jpg es la imagen de divisones, h3 esta el tema(divison), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-              <a href="divison_facil.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
+                <a href="divison_facil.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Memorama</h6>
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Memorama</h6>
+                  </div>
                 </div>
+                <h3 class="card-title"><a href="divison_facil.php">Nivel 4 Divisiones</a></h3>
+                <p class="card-description">
+                  Juguemos con cartas de divisiones
+                </p>
               </div>
-              <h3 class="card-title"><a href="divison_facil.php">Nivel 4 Divisiones</a></h3>
-              <p class="card-description">
-                Juguemos con cartas de divisiones
-              </p>
-            </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para numero misterioso, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numero misterioso, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="NM_sum.php"><img src="assets/img/TN/TNNmisteriossoSum.png" alt="" class="img-fluid"></a>
               </div>
@@ -252,10 +261,10 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para numero misterioso, en este caso resta, post-2.jpg es la imagen de resta, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numero misterioso, en este caso resta, post-2.jpg es la imagen de resta, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="NM_res.php"><img src="assets/img/TN/TNNmisteriossoRes.png" alt="" class="img-fluid"></a>
               </div>
@@ -267,7 +276,7 @@
                 </div>
                 <h3 class="card-title"><a href="multi_facil.php">Nivel 6 Restas</a></h3>
                 <p class="card-description">
-                ¿Faltan números en las restas?
+                  ¿Faltan números en las restas?
                 </p>
               </div>
             </div>
@@ -288,14 +297,14 @@
                 </div>
                 <h3 class="card-title"><a href="suma_facil.php">Nivel 7 Multiplicaciones</a></h3>
                 <p class="card-description">
-                ¿Faltan números en las multiplicaciones?
+                  ¿Faltan números en las multiplicaciones?
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para numero misterioso, en este caso division, post-6.jpg es la imagen de divisiones, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numero misterioso, en este caso division, post-6.jpg es la imagen de divisiones, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="NM_div.php"><img src="assets/img/TN/BGNmisteriossoDiv.png" alt="" class="img-fluid"></a>
               </div>
@@ -307,15 +316,15 @@
                 </div>
                 <h3 class="card-title"><a href="resta_facil.php">Nivel 8 Divisones</a></h3>
                 <p class="card-description">
-                ¿Faltan números en las divisiones?
+                  ¿Faltan números en las divisiones?
                 </p>
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para numeros revueltos, en este caso suma, post-1.jpg es la imagen de suma, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numeros revueltos, en este caso suma, post-1.jpg es la imagen de suma, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="OrdenamientoSumas.php"><img src="assets/img/TN/SumaTN.png" alt="" class="img-fluid"></a>
               </div>
@@ -356,7 +365,7 @@
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para numeros revueltos, en este caso multiplicacion, post-3.jpg es la imagen de multiplicaciones, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numeros revueltos, en este caso multiplicacion, post-3.jpg es la imagen de multiplicaciones, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="OrdenamientoMulti.php"><img src="assets/img/TN/MultiplicacionTN.png" alt="" class="img-fluid"></a>
               </div>
@@ -373,10 +382,10 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para numeros revueltos, en este caso division, post-6.jpg es la imagen de division, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numeros revueltos, en este caso division, post-6.jpg es la imagen de division, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
               <div class="card-img">
                 <a href="OrdenamientoDiv.php"><img src="assets/img/TN/DivisionTN.png" alt="" class="img-fluid"></a>
               </div>
@@ -394,7 +403,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </section><!-- End Blog Section -->
 
@@ -424,9 +433,9 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright"> Copyright &copy; MateAyuda - Plataforma Web Educativa - Proyecto Modular 2022 | CUCEI | Universidad de Guadalajara. 
+            <p class="copyright"> Copyright &copy; MateAyuda - Plataforma Web Educativa - Proyecto Modular 2022 | CUCEI | Universidad de Guadalajara.
             <div class="credits">
-            
+
             </div>
           </div>
         </div>
