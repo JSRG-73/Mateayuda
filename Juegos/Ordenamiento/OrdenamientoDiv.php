@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+<<<<<<< HEAD:Juegos/Ordenamiento/OrdenamientoDiv.php
     <link rel="stylesheet" href="../../estilos\styles.css">
+=======
+    <link rel="stylesheet" href="estilos\nr.css">
+>>>>>>> da49d775a6d12199640a0674bc10e31ec51ac443:OrdenamientoDiv.php
     <title>MateAyuda</title>
 </head>
 

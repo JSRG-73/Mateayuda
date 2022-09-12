@@ -246,7 +246,11 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
+<<<<<<< HEAD
                 <a href="Juegos/Numero misterioso/NM_sum.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+=======
+                <a href="NM_sum.php"><img src="assets/img/TN/TNNmisteriossoSum.png" alt="" class="img-fluid"></a>
+>>>>>>> da49d775a6d12199640a0674bc10e31ec51ac443
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -266,7 +270,11 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso resta, post-2.jpg es la imagen de resta, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
+<<<<<<< HEAD
                 <a href="Juegos/Numero misterioso/NM_res.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+=======
+                <a href="NM_res.php"><img src="assets/img/TN/TNNmisteriossoRes.png" alt="" class="img-fluid"></a>
+>>>>>>> da49d775a6d12199640a0674bc10e31ec51ac443
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -287,7 +295,11 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso multiplicacion, post-3.jpg es la imagen de mutiplicacions, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
+<<<<<<< HEAD
                 <a href="Juegos/Numero misterioso/NM_mul.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+=======
+                <a href="NM_mul.php"><img src="assets/img/TN/TNNmisteriossomul.png" alt="" class="img-fluid"></a>
+>>>>>>> da49d775a6d12199640a0674bc10e31ec51ac443
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -306,7 +318,11 @@
             <div class="card card-blog">
               <!--Las cartas de presentacion para numero misterioso, en este caso division, post-6.jpg es la imagen de divisiones, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
               <div class="card-img">
+<<<<<<< HEAD
                 <a href="Juegos/Numero misterioso/NM_div.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
+=======
+                <a href="NM_div.php"><img src="assets/img/TN/BGNmisteriossoDiv.png" alt="" class="img-fluid"></a>
+>>>>>>> da49d775a6d12199640a0674bc10e31ec51ac443
               </div>
               <div class="card-body">
                 <div class="card-category-box">
