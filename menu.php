@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <!--Va el navbar de Mateayuda, (la barra negra), los href sirven para navegar por id-->
-      <h1 class="logo"><a href="index.html">MateAyuda</a></h1>
+      <h1 class="logo"><a href="index.php">MateAyuda</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -107,7 +107,7 @@
                   <div class="swiper-slide">
                     <div class="testimonial-box">
                       <div class="author-test">
-                        <img src="assets/img/puppy2.jpg" alt="" class="rounded-circle b-shadow-a">
+                        <img src="assets/img/integrantes/foto_jorge.jpeg" alt="" class="rounded-circle b-shadow-a" width="200" height="240">
                         <span class="author">Jorge</span>
                       </div>
                       <div class="content-test">

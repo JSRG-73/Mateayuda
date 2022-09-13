@@ -27,7 +27,7 @@
 
     //Aqui se definen los rangos de los numeros
     $array1_size = 5;
-    $min = 0;
+    $min = 1;
     $max = 10;
 
     //Aqui se generan los numeros en cada partida
