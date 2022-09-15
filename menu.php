@@ -156,7 +156,7 @@
                 SELECCIONA
               </h3>
               <p class="subtitle-a">
-                Memoramas con temas
+                Juegos matemáticos
               </p>
               <div class="line-mf"></div>
             </div>
