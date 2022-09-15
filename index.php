@@ -36,7 +36,7 @@ $_SESSION["logged"]=NULL;
         <div class="welcome-back">
             <div class="message">
                 <h2>Bienvenido a MateAyuda</h2>
-                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <p>Si ya tienes una cuenta por favor inicia sesión aquí</p>
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
@@ -49,22 +49,26 @@ $_SESSION["logged"]=NULL;
             <input type="number" min="3" max="10" placeholder="Edad" name="edad">
             <input type="submit" value="Registrarse" name="botonCuenta">
         </form>
+
+        
     </div>
     <div class="container-form sign-in">
         <form class="formulario" action="#" id="formularioDos" name="formularioDos" method="POST">
             <!--Formulario iniciar sesion-->
-            <h2 class="create-account">Iniciar Sesion</h2>
-            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <h2 class="create-account">Iniciar Sesión</h2>
+            <p class="cuenta-gratis">¿Aún no tienes una cuenta?</p>
             <input type="text" autocomplete="off" placeholder="Nombre" name="nombre">
             <input type="password" autocomplete="off" placeholder="Contraseña" name="constrasena">
-            <input type="submit" value="Iniciar Sesion" name="botonLogin">
+            <input type="submit" value="Iniciar Sesión" name="botonLogin">
+            
         </form>
         <div class="welcome-back">
             <div class="message">
                 <!--El boton sign-in-btn es para ir a formulario registrarte-->
                 <h2>Bienvenido de nuevo</h2>
-                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <p>Si aun no tienes una cuenta por favor registrese aquí</p>
                 <button class="sign-in-btn">Registrarse</button>
+                
             </div>
         </div>
     </div>
@@ -84,6 +88,8 @@ if (isset($_POST['botonCuenta'])) {
     $edad = $_POST["edad"];
     $contrasena = $_POST["constrasena"];
 
+
+    
     $insertarDatos = "INSERT INTO usuario VALUES('$nombre','$edad','$contrasena')";
     $ejecutarInsertar = mysqli_query($con, $insertarDatos);
     //Una vez registrado, te redirige a menu
@@ -115,7 +121,7 @@ if (isset($_POST['botonLogin'])) {
     if (mysqli_num_rows($result) > 0) {
         header("Location: menu.php");
 
-    //Esto establece que un usuario está activo.
+    //Esto establece que un usuario inició sesión.
     $_SESSION["logged"] = true;
 
     } else {

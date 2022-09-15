@@ -54,7 +54,7 @@ body{
 
 #ecuacion{
     position:sticky;
-    user-select: none;
+
 }
 
 .resta_container{
@@ -144,7 +144,6 @@ body{
     position:sticky;
     min-height: 150px;
     width: 100%;
-    user-select: none;
 }
 
 .tittle_resta {
