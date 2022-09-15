@@ -4,7 +4,7 @@ require "Funciones/Conectar.php";
 $con = conectar();
 
 session_start();
-$_SESSION["logged"]=NULL;
+$_SESSION["logged"] = NULL;
 
 ?>
 
@@ -50,7 +50,7 @@ $_SESSION["logged"]=NULL;
             <input type="submit" value="Registrarse" name="botonCuenta">
         </form>
 
-        
+
     </div>
     <div class="container-form sign-in">
         <form class="formulario" action="#" id="formularioDos" name="formularioDos" method="POST">
@@ -60,7 +60,7 @@ $_SESSION["logged"]=NULL;
             <input type="text" autocomplete="off" placeholder="Nombre" name="nombre">
             <input type="password" autocomplete="off" placeholder="Contraseña" name="constrasena">
             <input type="submit" value="Iniciar Sesión" name="botonLogin">
-            
+
         </form>
         <div class="welcome-back">
             <div class="message">
@@ -68,7 +68,7 @@ $_SESSION["logged"]=NULL;
                 <h2>Bienvenido de nuevo</h2>
                 <p>Si aun no tienes una cuenta por favor registrese aquí</p>
                 <button class="sign-in-btn">Registrarse</button>
-                
+
             </div>
         </div>
     </div>
@@ -82,19 +82,38 @@ $_SESSION["logged"]=NULL;
 
 <?php
 
-//Este php inserta en la tabla usuario los datos si vas a registrate
+//Esta función nos servirápara validar los nombres de usuario.
+function filterName($name, $filter = "[^a-zA-Z0-9")
+{
+    return preg_match("~" . $filter . "~iU", $name) ? false : true;
+}
+
+//Este php inserta en la tabla usuario los datos si vas a registrate.
 if (isset($_POST['botonCuenta'])) {
+
     $nombre = $_POST["nombre"];
     $edad = $_POST["edad"];
     $contrasena = $_POST["constrasena"];
 
+    //Aquí se determina si el nombre que el usuario intenta registrar cumple con los criterios
+    if (!filterName($nombre)) {
+        echo "<script>alert('Este nombre de usuario no es valido, por favor solo usar letras y/o números')</script>";
+    } else {
 
-    
-    $insertarDatos = "INSERT INTO usuario VALUES('$nombre','$edad','$contrasena')";
-    $ejecutarInsertar = mysqli_query($con, $insertarDatos);
-    //Una vez registrado, te redirige a menu
-    if ($ejecutarInsertar) {
-        header("Location: menu.php");
+        //Aquí se busca si ya existe el nombre de usuario para evitar registros duplicados
+        $select = mysqli_query($con, "SELECT * FROM usuario WHERE nombre = '" . $_POST['nombre'] . "'");
+        if (mysqli_num_rows($select)) {
+            echo "<script>alert('Este nombre de usuario ya existe, por favor escoje otro')</script>";
+        } else {
+
+            //En caso de que haya pasado los filtros anteriores, se registra un nuevo usuario aquí
+            $insertarDatos = "INSERT INTO usuario VALUES('$nombre','$edad','$contrasena')";
+            $ejecutarInsertar = mysqli_query($con, $insertarDatos);
+            //Una vez registrado, te redirige a menu
+            if ($ejecutarInsertar) {
+                header("Location: menu.php");
+            }
+        }
     }
 }
 ?>
@@ -112,7 +131,7 @@ if (isset($_POST['botonCuenta'])) {
 //Este php valida que se encuentre un usuario y constraseña en la base de datos 
 if (isset($_POST['botonLogin'])) {
     $nombre = $_POST["nombre"];
-    $contrasena = $_POST["constrasena"];    
+    $contrasena = $_POST["constrasena"];
 
     $sql = "SELECT * FROM usuario WHERE nombre='$nombre' AND contrasena='$contrasena'";
     $result = mysqli_query($con, $sql);
@@ -121,9 +140,8 @@ if (isset($_POST['botonLogin'])) {
     if (mysqli_num_rows($result) > 0) {
         header("Location: menu.php");
 
-    //Esto establece que un usuario inició sesión.
-    $_SESSION["logged"] = true;
-
+        //Esto establece que un usuario inició sesión.
+        $_SESSION["logged"] = true;
     } else {
         echo '<script>console.log("Error");</script>';
         //echo '<script>alert("Error");</script>';
