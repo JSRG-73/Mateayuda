@@ -1,0 +1,27 @@
+version: "3.1"
+#### historias con los intents y actions posibles, steps => pasos a seguir
+#### combinacion de intents(usuario) y actions(bot)
+stories:
+  - story: camino feliz
+    steps:
+      - intent: saludo
+      - action: utter_saludo
+      - action: utter_matematicas
+      - intent: afirmar
+      - action: utter_feliz
+
+  - story: camino triste
+    steps:
+      - intent: saludo
+      - action: utter_saludo
+      - action: utter_matematicas
+      - intent: negar
+      - action: utter_animar
+
+  - story: camino triste 2
+    steps:
+      - intent: saludo
+      - action: utter_saludo
+      - action: utter_matematicas
+      - intent: negar
+      - action: utter_animar
