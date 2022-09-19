@@ -2,6 +2,7 @@ version: "3.1"
 #### intents, del lado del usuario
 #### examples, ejemplos de posibles entradas y la idea que da a entender
 #### (valor)[variable] ejemplo de entities
+
 nlu:
   - intent: saludo
     examples: |
@@ -189,14 +190,6 @@ nlu:
 
   - intent: queSuma
     examples: |
-      - ¿ cuanto es [5](numeroA)+[5](numeroB) ?
-      - ¿ cuanto es [cinco](numeroA)mas[cinco](numeroB) ?
-      - ¿ cuanto es [cinco](numeroA)más[cinco](numeroB) ?
-      - ¿ cuanto es [seis](numeroA)mas[seis](numeroB) ?
-      - ¿ cuanto es [nueve](numeroA)más[nueve](numeroB) ?
-      - ¿ cuanto es [1](numeroA)+[1](numeroB) ?
-      - ¿ cuanto es [uno](numeroA)mas[uno](numeroB) ?
-      - ¿ cuanto es [uno](numeroA)más[uno](numeroB) ?
       - ¿ que es [suma](suma) ?
       - ¿ que es la [suma](suma) ?
       - ¿ que es una [suma](suma) ?
@@ -206,12 +199,6 @@ nlu:
 
   - intent: queResta
     examples: |
-      - ¿ cuanto es [6](numeroA)-[6](numeroB) ?
-      - ¿ cuanto es [seis](numeroA)menos[seis](numeroB) ?
-      - ¿ cuanto es [2](numeroA)-[2](numeroB) ?
-      - ¿ cuanto es [9](numeroA)-[9](numeroB) ?
-      - ¿ cuanto es [1](numeroA)-[1](numeroB) ?
-      - ¿ cuanto es [dos](numeroA)menos][dos](numeroB) ?
       - ¿ que es [resta](resta) ?
       - ¿ que es la [resta](resta) ?
       - ¿ que es una [resta](resta) ?
@@ -221,16 +208,6 @@ nlu:
 
   - intent: queDivision
     examples: |
-      - ¿ cuanto es [8](numeroA)/[8](numeroB) ?
-      - ¿ cuanto es [ocho](numeroA)entre[ocho](numeroB) ?
-      - ¿ cuanto es [ocho](numeroA)dividido[ocho](numeroB) ?
-      - ¿ cuanto es [4](numeroA)/[4](numeroB) ?
-      - ¿ cuanto es [cuatro](numeroA)entre[cuatro](numeroB) ?
-      - ¿ cuanto es [3](numeroA) / [3](numeroB) ?
-      - ¿ cuanto es [dos](numeroA)entre[dos](numeroB) ?
-      - ¿ cuanto es [uno](numeroA)dividido[uno](numeroB) ?
-      - ¿ cuanto es [4](numeroA) / [4](numeroB) ?
-      - ¿ cuanto es [cuatro](numeroA)entre[cuatro](numeroB) ?
       - ¿ que es [division](division) ?
       - ¿ que es la [division](division) ?
       - [division](division)
@@ -243,18 +220,6 @@ nlu:
 
   - intent: queMultiplicacion
     examples: |
-      - ¿ cuanto es [9](numeroA)x[9](numeroB) ?
-      - ¿ cuanto es [1](numeroA)x[1](numeroB) ?
-      - ¿ cuanto es [5](numeroA)x[5](numeroB) ?
-      - ¿ cuanto es [6](numeroA) x [6](numeroB) ?
-      - ¿ cuanto es [7](numeroA) x [7](numeroB) ?
-      - ¿ cuanto es [nueve](numeroA)por[nueve](numeroB) ?
-      - ¿ cuanto es [3](numeroA)*[3](numeroB) ?
-      - ¿ cuanto es [tres](numeroA)por[tres](numeroB) ?
-      - ¿ cuanto es [4](numeroA)x[4](numeroB) ?
-      - ¿ cuanto es [1](numeroA)x[1](numeroB) ?
-      - ¿ cuanto es [ocho](numeroA)por[ocho](numeroB) ?
-      - ¿ cuanto es [6](numeroA)*[6](numeroB) ?
       - ¿ que es [multiplicacion](multiplicacion) ?
       - ¿ que es la [multiplicacion](multiplicacion) ?
       - [multiplicacion](multiplicacion)
@@ -422,3 +387,28 @@ nlu:
       - [dodecágono](dodecagono)
       - los [dodecagonos](dodecagono)
       - ¿ que son los [dodecagonos](dodecagono) ?
+
+  - intent: calculadora
+    examples: |
+      - es [+](signo)[1](numeroA) 
+      - es [-](signo)[2](numeroA) 
+      - es [+](signo)[3](numeroA) 
+      - es [-](signo)[4](numeroA) 
+      - es [mas](signo)[5](numeroA) 
+      - es [menos](signo)[6](numeroA) 
+      - es [por](signo)[7](numeroA) 
+      - es [divido](signo)[8](numeroA) 
+      - es [entre](signo)[9](numeroA) 
+      - es [+](signo)[uno](numeroA) 
+      - es [-](signo)[dos](numeroA) 
+      - es [X](signo)[tres](numeroA) 
+      - es [más](signo)[cuatro](numeroA) 
+      - es [mas](signo)[cinco](numeroA) 
+      - es [menos](signo)[seis](numeroA) 
+      - es [por](signo)[siete](numeroA) 
+      - es [dividido](signo)[ocho](numeroA) 
+      - es [entre](signo)[nueve](numeroA) 
+      - es [más](signo)[diez](numeroA) 
+      - es [X](signo)[2](numeroA) 
+      - es [más](signo)[4](numeroA) 
+      - es [X](signo)[3](numeroA)
