@@ -94,11 +94,14 @@
                     <div class="testimonial-box">
                       <div class="author-test">
                         <img src="assets/img/puppy1.jpg" alt="" class="rounded-circle b-shadow-a">
-                        <span class="author">Ivan</span>
+                        <span class="author">Iván Herrera Barrios</span>
                       </div>
                       <div class="content-test">
                         <p class="description lead">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, in voluptatibus? Architecto sit laboriosam impedit commodi dignissimos facere aperiam veniam deleniti cupiditate vel ad esse, similique labore minus quis earum.
+                        Desarrollador de la IA,desarrollador de videojuegos, diseñador de base de datos y diseñador del equipo.    
+                        
+                        
+                        Entre las tareas realizadas se encuentran: desarrollar videojuegos, crear recursos gráficos, montar el servidor, entrenar la IA, realizar la documentación,diseño de la base de datos, implementación de la base de datos, desarrollar la IA y diseño de la IA.                      
                         </p>
                       </div>
                     </div>
@@ -108,11 +111,16 @@
                     <div class="testimonial-box">
                       <div class="author-test">
                         <img src="assets/img/integrantes/foto_jorge.jpeg" alt="" class="rounded-circle b-shadow-a" width="200" height="240">
-                        <span class="author">Jorge</span>
+                        <span class="author">Jorge Sebastián Rosas Gómez</span>
                       </div>
                       <div class="content-test">
                         <p class="description lead">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, in voluptatibus? Architecto sit laboriosam impedit commodi dignissimos facere aperiam veniam deleniti cupiditate vel ad esse, similique labore minus quis earum.
+                          DevOPs, desarrollador de videojuegos, diseñador de base de datos y Quality Assurance del equipo.  
+                          
+                          
+                          Entre las tareas realizadas se encuentran: 
+                          probar software, desarrollar videojuegos, crear recursos gráficos, montar el servidor, entrenar la IA, responsive design,realizar la documentación,diseño de la base de datos, implementación de la base de datos,diseño de videojuegos, y diseño de la IA.                          
+
                         </p>
                       </div>
                     </div>
@@ -122,11 +130,15 @@
                     <div class="testimonial-box">
                       <div class="author-test">
                         <img src="assets/img/puppy1.jpg" alt="" class="rounded-circle b-shadow-a">
-                        <span class="author">Alfredo</span>
+                        <span class="author">Luis Alfredo Pérez Hidalgo</span>
                       </div>
                       <div class="content-test">
                         <p class="description lead">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, in voluptatibus? Architecto sit laboriosam impedit commodi dignissimos facere aperiam veniam deleniti cupiditate vel ad esse, similique labore minus quis earum.
+                          Desarrollador de videojuegos, diseñador de base de datos, arquitecto de software y documentador del equipo.
+
+
+                          Entre las tareas realizadas se encuentran: 
+                          probar software, desarrollar videojuegos, crear recursos gráficos,  responsive design,realizar la documentación,diseño de la base de datos,diseño de videojuegos,desarrollar de la IA y diseño de la IA.      
                         </p>
                       </div>
                     </div>
