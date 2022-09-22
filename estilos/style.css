@@ -45,6 +45,7 @@ body {
 .message h2 {
     font-size: 1.7rem;
     padding: 1rem 0;
+    color:midnightblue;
 }
 
 /*Diseño de botones*/
@@ -74,6 +75,10 @@ body {
     text-align: center;
 }
 
+.formulario h2 {
+    color: midnightblue;
+}
+
 .formulario input {
     width: 70%;
     display: block;
@@ -86,7 +91,8 @@ body {
     outline: none;
     padding: .2rem 0;
     font-size: .9rem;
-    color: white;
+    color:rgb(2, 17, 31);
+    font-weight: bold;
     
 }
 
@@ -154,4 +160,12 @@ body {
 .sign-up.active {
     opacity: 0;
     visibility: hidden;
+}
+
+/*Esto se mantiene oculto a no ser que haya un error en el registro*/
+#mensaje_error {
+    display:none;
+    padding: 2rem 0;
+    color: red;
+    
 }

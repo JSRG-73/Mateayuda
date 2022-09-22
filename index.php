@@ -21,6 +21,8 @@ $_SESSION["logged"] = NULL;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
     <!--Titulo del programa-->
     <title>MateAyuda</title>
 
@@ -33,6 +35,7 @@ $_SESSION["logged"] = NULL;
 <body>
     <!--El boton sign-up-btn es para ir a formulario iniciar sesion-->
     <div class="container-form sign-up">
+    
         <div class="welcome-back">
             <div class="message">
                 <h2>Bienvenido a MateAyuda</h2>
@@ -44,24 +47,26 @@ $_SESSION["logged"] = NULL;
             <!--Formulario para crear una cuenta-->
             <h2 class="create-account">Crear una cuenta</h2>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
+
             <input type="text" autocomplete="off" placeholder="Nombre" name="nombre">
             <input type="password" autocomplete="off" placeholder="Contraseña" name="constrasena">
             <input type="number" min="3" max="10" placeholder="Edad" name="edad">
             <input type="submit" value="Registrarse" name="botonCuenta">
+            <p id = "mensaje_error">Este nombre de usuario ya existe, por favor escoje otro</p>
         </form>
 
 
     </div>
-    <div class="container-form sign-in">
-        <form class="formulario" action="#" id="formularioDos" name="formularioDos" method="POST">
-            <!--Formulario iniciar sesion-->
-            <h2 class="create-account">Iniciar Sesión</h2>
-            <p class="cuenta-gratis">¿Aún no tienes una cuenta?</p>
-            <input type="text" autocomplete="off" placeholder="Nombre" name="nombre">
-            <input type="password" autocomplete="off" placeholder="Contraseña" name="constrasena">
-            <input type="submit" value="Iniciar Sesión" name="botonLogin">
-
-        </form>
+        <div class="container-form sign-in">
+            <form class="formulario" action="#" id="formularioDos" name="formularioDos" method="POST">
+                <!--Formulario iniciar sesion-->
+                <h2 class="create-account">Iniciar Sesión</h2>
+                <p class="cuenta-gratis">¿Aún no tienes una cuenta?</p>
+                <input type="text" autocomplete="off" placeholder="Nombre" name="nombre">
+                <input type="password" autocomplete="off" placeholder="Contraseña" name="constrasena">
+                <input type="submit" value="Iniciar Sesión" name="botonLogin">
+                
+            </form>
         <div class="welcome-back">
             <div class="message">
                 <!--El boton sign-in-btn es para ir a formulario registrarte-->
@@ -99,13 +104,15 @@ if (isset($_POST['botonCuenta'])) {
 
     //Aquí se determina si el nombre que el usuario intenta registrar cumple con los criterios
     if (!filterName($nombre)) {
-        echo "<script>alert('Este nombre de usuario no es valido, por favor solo usar letras y/o números\n También puedes usar guión (-) y guión bajo (_)')</script>";
+        echo "<script>alert('Este nombre de usuario no es valido, por favor solo usar letras y/o números\n También puedes usar guión (-) y guión bajo (_)');</script>";
     } else {
 
         //Aquí se busca si ya existe el nombre de usuario para evitar registros duplicados
         $select = mysqli_query($con, "SELECT * FROM usuario WHERE nombre = '" . $_POST['nombre'] . "'");
         if (mysqli_num_rows($select)) {
-            echo "<script>alert('Este nombre de usuario ya existe, por favor escoje otro')</script>";
+            //echo "<script>alert('');</script>";
+            echo'<script> document.getElementById("mensaje_error").style.display="flex" </script>';
+
         } else {
 
             //En caso de que haya pasado los filtros anteriores, se registra un nuevo usuario aquí
@@ -147,6 +154,9 @@ if (isset($_POST['botonLogin'])) {
     } else {
         echo '<script>console.log("Error");</script>';
         //echo '<script>alert("Error");</script>';
+        echo '<script>alert("Datos invalidos");</script>';
     }
+} else{
+    
 }
 ?>
