@@ -95,10 +95,3 @@ stories:
           gracias
         intent: gracias
       - action: utter_agradecer
-
-  - story: retar calculadora
-    steps:
-      - user: |
-          ¿ cuanto es 1 + 1
-        intent: calculadora
-      - action: utter_calculadora

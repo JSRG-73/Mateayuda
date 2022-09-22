@@ -39,11 +39,9 @@ intents:
 
 ####entidades usadas en los intens
 entities:
-  - numeroA
-  - numeroB
-  - signo
   - opinion
-  - numero
+  - numeroA
+  - signo
   - numeros
   - figura
   - figuras
@@ -200,6 +198,9 @@ responses:
     - text: "Siri y Alexa son mis hermanas mayores, no me confundas con ellas"
     - text: "Te hablan Siri"
     - text: "Te hablan Alexa"
+
+actions:
+  - action_calculadora
 
 ####palabras reservadas
 session_config:
