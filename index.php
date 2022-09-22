@@ -55,7 +55,6 @@ $_SESSION["logged"] = NULL;
             <p id = "mensaje_error">Este nombre de usuario ya existe, por favor escoje otro</p>
         </form>
 
-
     </div>
         <div class="container-form sign-in">
             <form class="formulario" action="#" id="formularioDos" name="formularioDos" method="POST">
@@ -88,9 +87,9 @@ $_SESSION["logged"] = NULL;
 <?php
 
 //Esta función nos servirápara validar los nombres de usuario.
-function filterName($name)
+function filterName($name, $filter = "[^a-zA-Z0-9")
 {
-    return preg_match("/^[\w-]+$/", $name);
+    return preg_match("~" . $filter . "~iU", $name) ? false : true;
 }
 
 //Este php inserta en la tabla usuario los datos si vas a registrate.
@@ -99,8 +98,6 @@ if (isset($_POST['botonCuenta'])) {
     $nombre = $_POST["nombre"];
     $edad = $_POST["edad"];
     $contrasena = $_POST["constrasena"];
-
- 
 
     //Aquí se determina si el nombre que el usuario intenta registrar cumple con los criterios
     if (!filterName($nombre)) {
