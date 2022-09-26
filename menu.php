@@ -86,27 +86,28 @@
           <div class="row">
             <div class="col-md-12">
               <!--Swipper permite cambiar con los div que contengan la clase como el efecto carril javascript, sirve para presentar, class author sirve para mostrar el nombre del desarrollador-->
-
+              
               <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-
-                  <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="testimonial-box">
                       <div class="author-test">
-                        <img src="assets/img/puppy1.jpg" alt="" class="rounded-circle b-shadow-a">
+                        <img src="assets/img/integrantes/foto_ivan.jpeg" alt="" class="rounded-circle b-shadow-a" width="200" height="240">
                         <span class="author">Iván Herrera Barrios</span>
                       </div>
                       <div class="content-test">
                         <p class="description lead">
-                        Desarrollador de la IA,desarrollador de videojuegos, diseñador de base de datos y diseñador del equipo.    
+                        Desarrollador de la IA, diseñador  y analista del equipo.    
                         
                         
-                        Entre las tareas realizadas se encuentran: desarrollar videojuegos, crear recursos gráficos, montar el servidor, entrenar la IA, realizar la documentación,diseño de la base de datos, implementación de la base de datos, desarrollar la IA y diseño de la IA.                      
+                        Entre las tareas realizadas se encuentran: 
+                        Crear recursos gráficos, entrenar la IA,  desarrollar la IA y diseño de la IA.                         
+
                         </p>
                       </div>
                     </div>
                   </div><!-- End testimonial item -->
-
+                  
                   <div class="swiper-slide">
                     <div class="testimonial-box">
                       <div class="author-test">
@@ -115,11 +116,11 @@
                       </div>
                       <div class="content-test">
                         <p class="description lead">
-                          DevOPs, desarrollador de videojuegos, diseñador de base de datos y Quality Assurance del equipo.  
+                          DevOPs, arquitecto de software y Quality Assurance del equipo.  
                           
                           
                           Entre las tareas realizadas se encuentran: 
-                          probar software, desarrollar videojuegos, crear recursos gráficos, montar el servidor, entrenar la IA, responsive design,realizar la documentación,diseño de la base de datos, implementación de la base de datos,diseño de videojuegos, y diseño de la IA.                          
+                          Probar el software, montar el servidor, Responsive Design e implementación de la base de datos.                          
 
                         </p>
                       </div>
@@ -134,11 +135,11 @@
                       </div>
                       <div class="content-test">
                         <p class="description lead">
-                          Desarrollador de videojuegos, diseñador de base de datos, arquitecto de software y documentador del equipo.
+                          Desarrollador de videojuegos, diseñador de base de datos y documentador del equipo.
 
 
                           Entre las tareas realizadas se encuentran: 
-                          probar software, desarrollar videojuegos, crear recursos gráficos,  responsive design,realizar la documentación,diseño de la base de datos,diseño de videojuegos,desarrollar de la IA y diseño de la IA.      
+                          Desarrollar videojuegos, realizar la documentación, diseño de la base de datos y diseño de videojuegos.    
                         </p>
                       </div>
                     </div>

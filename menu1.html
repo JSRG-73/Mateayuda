@@ -24,29 +24,31 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: DevFolio - v4.7.1
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
+<!--Esto sirve para que no se pueda acceder a esta página si no se ha iniciado sesión.-->
+<?php
+  session_start();
+  if (!$_SESSION["logged"]) {
+    header("Location: index.php");
+  } 
+  ?>
+
 <body>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <!--Va el navbar de Mateayuda, (la barra negra), los href sirven para navegar por id-->
+      <h1 class="logo"><a href="index.php">MateAyuda</a></h1>
 
-      <h1 class="logo"><a href="index.html">MateAyuda</a></h1>
-   
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#testimonio">Sobre mi</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Memoramas</a></li>
-          <li><a class="nav-link scrollto " href="#blog1">Ordena las fichas</a></li>
+          <li><a class="nav-link scrollto" href="#testimonio">Participantes</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Juegos</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -56,7 +58,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-   <!--Presentacion de Mateayuda, data-typed-items se encuentran las palabras de presentacion con efecto de teclado -->
+  <!--Presentacion de Mateayuda, data-typed-items se encuentran las palabras de presentacion con efecto de teclado -->
   <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/post-5.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
@@ -73,38 +75,87 @@
 
   <main id="main">
 
+
+
+
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonio" >
+    <section id="testimonio">
       <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/post-4.jpg)">
         <div class="overlay-mf"></div>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-               <!--Swipper permite cambiar con los div que contengan la clase como el efecto carril javascript, sirve para presentar, class author sirve para mostrar el nombre del desarrollador-->
-
+              <!--Swipper permite cambiar con los div que contengan la clase como el efecto carril javascript, sirve para presentar, class author sirve para mostrar el nombre del desarrollador-->
+              
               <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-
-                  <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="testimonial-box">
                       <div class="author-test">
-                        <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
+                        <img src="assets/img/integrantes/foto_ivan.jpeg" alt="" class="rounded-circle b-shadow-a" width="200" height="240">
                         <span class="author">Iván Herrera Barrios</span>
                       </div>
                       <div class="content-test">
                         <p class="description lead">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facere quaerat. Ratione, magni nobis nostrum molestias totam perferendis magnam rerum repellat commodi natus, eos corporis neque, saepe unde cum illum!
+                        Desarrollador de la IA, diseñador  y analista del equipo.    
+                        
+                        
+                        Entre las tareas realizadas se encuentran: 
+                        Crear recursos gráficos, entrenar la IA,  desarrollar la IA y diseño de la IA.                         
+
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img src="assets/img/integrantes/foto_jorge.jpeg" alt="" class="rounded-circle b-shadow-a" width="200" height="240">
+                        <span class="author">Jorge Sebastián Rosas Gómez</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          DevOPs, arquitecto de software y Quality Assurance del equipo.  
+                          
+                          
+                          Entre las tareas realizadas se encuentran: 
+                          Probar el software, montar el servidor, Responsive Design e implementación de la base de datos.                          
+
                         </p>
                       </div>
                     </div>
                   </div><!-- End testimonial item -->
 
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img src="assets/img/puppy1.jpg" alt="" class="rounded-circle b-shadow-a">
+                        <span class="author">Luis Alfredo Pérez Hidalgo</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Desarrollador de videojuegos, diseñador de base de datos y documentador del equipo.
+
+
+                          Entre las tareas realizadas se encuentran: 
+                          Desarrollar videojuegos, realizar la documentación, diseño de la base de datos y diseño de videojuegos.    
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
           
         </div> -->
+            </div>
           </div>
         </div>
-      </div>
       </div><!-- End Testimonials Section -->
     </section>
 
@@ -115,10 +166,10 @@
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                MEMORAMAS
+                SELECCIONA
               </h3>
               <p class="subtitle-a">
-                Pon a prueba tu memoria resolviendo operaciones y buscando su solución.
+                Juegos matemáticos
               </p>
               <div class="line-mf"></div>
             </div>
@@ -127,9 +178,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para memorama, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="suma_facil.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Memorama/suma_facil.php"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -137,18 +188,18 @@
                     <h6 class="category">Memorama</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="suma_facil.php">Suma</a></h3>
+                <h3 class="card-title"><a href="Juegos/Memorama/suma_facil.php">Nivel 1 Sumas</a></h3>
                 <p class="card-description">
-                  Pon a prueba tus habilidades matematicas
+                  Juguemos con cartas de sumas
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-2.jpg es la imagen de restass, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para memorama, en este caso resta, post-2.jpg es la imagen de restas, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="resta_facil.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+                <a href="Juegos/Memorama/resta_facil.php"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -156,104 +207,169 @@
                     <h6 class="category">Memorama</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="resta_facil.php">Resta</a></h3>
+                <h3 class="card-title"><a href="Juegos/Memorama/resta_facil.php">Nivel 2 Restas</a></h3>
                 <p class="card-description">
-                  Pon a prueba tus habilidades matematicas
+                  Juguemos con cartas de restas
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-2.jpg es la imagen de multiplicacion, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
-              <div class="card-img">
-                <a href="multi_facil.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Memorama</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="multi_facil.php">Multiplicación</a></h3>
-                <p class="card-description">
-                  Pon a prueba tus habilidades matematicas
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-             <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-3.jpg es la imagen de divion, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
-            <div class="card-img">
-              <a href="divison_facil.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Memorama</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="divison_facil.php">División</a></h3>
-              <p class="card-description">
-                Pon a prueba tus habilidades matematicas
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Blog Section -->
 
-    <!-- ======= Blog Section Ordenamiento ======= -->
-    <section id="blog1" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                ORDENA LAS FICHAS
-              </h3>
-              <p class="subtitle-a">
-                Resuelve las operaciones, arrastra y ordena las fichas de menor a mayor.
-              </p>
-              <div class="line-mf"></div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <!--Las cartas de presentacion para memorama, en este caso multiplicacion, post-3.jpg es la imagen de multiplicacion, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
+              <div class="card-img">
+                <a href="Juegos/Memorama/multi_facil.php"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Memorama</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="Juegos/Memorama/multi_facil.php">Nivel 3 Multiplicaciones</a></h3>
+                <p class="card-description">
+                  Juguemos con cartas de multiplicaciones
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para memorama, en este caso division, post-6.jpg es la imagen de divisones, h3 esta el tema(divison), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="OrdenamientoSumas.php"><img src="assets/img/TN/SumaTN.png" alt="" class="img-fluid"></a>
+                <a href="Juegos/Memorama/divison_facil.php"><img src="assets/img/post-6.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">Ordenar</h6>
+                    <h6 class="category">Memorama</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="suma_facil.php">Suma</a></h3>
+                <h3 class="card-title"><a href="Juegos/Memorama/divison_facil.php">Nivel 4 Divisiones</a></h3>
+                <p class="card-description">
+                  Juguemos con cartas de divisiones
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <!--Las cartas de presentacion para numero misterioso, en este caso suma, post-1.jpg es la imagen de sumas, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
+              <div class="card-img">
+                <a href="Juegos/Numero misterioso/NM_sum.php"><img src="assets/img/TN/TNNmisteriossoSum.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Numero misterioso</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_sum.php">Nivel 5 Sumas</a></h3>
+                <p class="card-description">
+                  ¿Faltan números en las sumas?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <!--Las cartas de presentacion para numero misterioso, en este caso resta, post-2.jpg es la imagen de resta, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
+              <div class="card-img">
+                <a href="Juegos/Numero misterioso/NM_res.php"><img src="assets/img/TN/TNNmisteriossoRes.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">numero misterioso</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_res.php">Nivel 6 Restas</a></h3>
+                <p class="card-description">
+                  ¿Faltan números en las restas?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <!--Las cartas de presentacion para numero misterioso, en este caso multiplicacion, post-3.jpg es la imagen de mutiplicacions, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
+              <div class="card-img">
+                <a href="Juegos/Numero misterioso/NM_mul.php"><img src="assets/img/TN/TNNmisteriossomul.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">numero misterio</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_mul.php">Nivel 7 Multiplicaciones</a></h3>
+                <p class="card-description">
+                  ¿Faltan números en las multiplicaciones?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <!--Las cartas de presentacion para numero misterioso, en este caso division, post-6.jpg es la imagen de divisiones, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
+              <div class="card-img">
+                <a href="Juegos/Numero misterioso/NM_div.php"><img src="assets/img/TN/BGNmisteriossoDiv.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">numero misterioso</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="Juegos/Numero misterioso/NM_div.php">Nivel 8 Divisones</a></h3>
+                <p class="card-description">
+                  ¿Faltan números en las divisiones?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <!--Las cartas de presentacion para numeros revueltos, en este caso suma, post-1.jpg es la imagen de suma, h3 esta el tema(suma), y una descripcion simple de que trata el juego-->
+              <div class="card-img">
+                <a href="Juegos/Ordenamiento/OrdenamientoSumas.php"><img src="assets/img/TN/SumaTN.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Numeros revueltos</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoSumas.php">Nivel 9 Sumas</a></h3>
                 <p class="card-description">
                   Resuelve las sumas y ordena las fichas de menor a mayor.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="row">
           <div class="col-md-4">
             <div class="card card-blog">
-               <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-2.jpg es la imagen de restass, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numeros revueltos, en este caso resta, post-2.jpg es la imagen de restas, h3 esta el tema(resta), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="OrdenamientoRestas.php"><img src="assets/img/TN/RestaTN.png" alt="" class="img-fluid"></a>
+                <a href="Juegos/Ordenamiento/OrdenamientoRestas.php"><img src="assets/img/TN/RestaTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">Ordenar</h6>
+                    <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="assets/img/TN/RestaTN.png">Resta</a></h3>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoRestas.php">Nivel 10 Restas</a></h3>
                 <p class="card-description">
                   Resuelve las restas y ordena las fichas de menor a mayor.
                 </p>
@@ -262,49 +378,47 @@
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
-              <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-2.jpg es la imagen de multiplicacion, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
+              <!--Las cartas de presentacion para numeros revueltos, en este caso multiplicacion, post-3.jpg es la imagen de multiplicaciones, h3 esta el tema(multiplicacion), y una descripcion simple de que trata el juego-->
               <div class="card-img">
-                <a href="OrdenamientoMulti.php"><img src="assets/img/TN/MultiplicacionTN.png" alt="" class="img-fluid"></a>
+                <a href="Juegos/Ordenamiento/OrdenamientoMulti.php"><img src="assets/img/TN/MultiplicacionTN.png" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">Ordenar</h6>
+                    <h6 class="category">Numeros revueltos</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="assets/img/TN/MultiplicacionTN.png">Multiplicación</a></h3>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoMulti.php">Nivel 11 Multiplicaciones</a></h3>
                 <p class="card-description">
                   Resuelve las multiplicaciones y ordena las fichas de menor a mayor.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-             <!--Las cartas de presentacion para niveles MateAyuda, en este caso suma, post-3.jpg es la imagen de divion, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
-            <div class="card-img">
-              <a href="OrdenamientoDiv.php"><img src="assets/img/TN/DivicionTN.png" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Ordenar</h6>
-                </div>
+
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <!--Las cartas de presentacion para numeros revueltos, en este caso division, post-6.jpg es la imagen de division, h3 esta el tema(division), y una descripcion simple de que trata el juego-->
+              <div class="card-img">
+                <a href="Juegos/Ordenamiento/OrdenamientoDiv.php"><img src="assets/img/TN/DivisionTN.png" alt="" class="img-fluid"></a>
               </div>
-              <h3 class="card-title"><a href="assets/img/TN/DivicionTN.png">División</a></h3>
-              <p class="card-description">
-                Resuelve las diviciones y ordena las fichas de menor a mayor.
-              </p>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Numeros revueltos</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="Juegos/Ordenamiento/OrdenamientoDiv.php">Nivel 12 Divisiones</a></h3>
+                <p class="card-description">
+                  Resuelve las diviciones y ordena las fichas de menor a mayor.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section><!-- End Blog Section -->
-
- 
-
-
 
     <!-- ======= Contact Section ======= -->
     <!--Seccion de contacto, mostramos que es Mateayuda y su objetivo-->
@@ -332,15 +446,17 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright"> Copyright &copy; MateAyuda - Plataforma Web Educativa - Proyecto Modular 2022 | CUCEI | Universidad de Guadalajara. 
+            <p class="copyright"> Copyright &copy; MateAyuda - Plataforma Web Educativa - Proyecto Modular 2022 | CUCEI | Universidad de Guadalajara.
             <div class="credits">
-            
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer><!-- End  Footer -->
+
+
 
   <!-- Vendor JS Files -->
   <!--JS definidos para el funcionamiento del menu-->
@@ -353,9 +469,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <!-- script del BOT -->
+    <!-- script del BOT -->
   <script src="assets/js/bot.js"></script>
-
 </body>
 
 </html>
