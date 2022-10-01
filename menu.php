@@ -130,7 +130,7 @@
                   <div class="swiper-slide">
                     <div class="testimonial-box">
                       <div class="author-test">
-                        <img src="assets/img/puppy1.jpg" alt="" class="rounded-circle b-shadow-a">
+                      <img src="assets/img/integrantes/foto_alfredo.jpeg" alt="" class="rounded-circle b-shadow-a" width="200" height="240">
                         <span class="author">Luis Alfredo Pérez Hidalgo</span>
                       </div>
                       <div class="content-test">
