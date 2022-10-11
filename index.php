@@ -87,9 +87,9 @@ $_SESSION["logged"] = NULL;
 <?php
 
 //Esta función nos servirápara validar los nombres de usuario.
-function filterName($name, $filter = "[^a-zA-Z0-9")
+function filterName($name)
 {
-    return preg_match("~" . $filter . "~iU", $name) ? false : true;
+    return preg_match("/^[\w-]+$/", $name);
 }
 
 //Este php inserta en la tabla usuario los datos si vas a registrate.
@@ -99,9 +99,11 @@ if (isset($_POST['botonCuenta'])) {
     $edad = $_POST["edad"];
     $contrasena = $_POST["constrasena"];
 
+ 
+
     //Aquí se determina si el nombre que el usuario intenta registrar cumple con los criterios
     if (!filterName($nombre)) {
-        echo "<script>alert('Este nombre de usuario no es valido, por favor solo usar letras y/o números\n También puedes usar guión (-) y guión bajo (_)');</script>";
+        echo "<script>alert('Este nombre de usuario no es valido, por favor solo usar letras y/o números\n También puedes usar guión (-) y guión bajo (_)')</script>";
     } else {
 
         //Aquí se busca si ya existe el nombre de usuario para evitar registros duplicados

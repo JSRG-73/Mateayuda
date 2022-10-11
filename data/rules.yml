@@ -151,3 +151,8 @@ rules:
     steps:
       - intent: queDodecagono
       - action: utter_queDodecagono
+
+  - rule: Calculadora
+    steps:
+      - intent: calculadora
+      - action: action_calculadora
