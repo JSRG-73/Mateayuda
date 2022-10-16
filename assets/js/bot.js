@@ -16,7 +16,7 @@
             inputTextFieldHint: "Escribe un mensaje...",
             connectingText: "Roboto está escribiendo...",
             customData: { language: "es" },
-            socketUrl: "http://localhost:5005",
+            socketUrl: "http://mateayuda.ddnsking.com:5005",
           },
           null
         );
