@@ -115,6 +115,7 @@ rules:
   - rule: que es pentagono
     steps:
       - intent: quePentagono
+
       - action: utter_quePentagono
 
   - rule: que es hexagono
@@ -151,3 +152,18 @@ rules:
     steps:
       - intent: queDodecagono
       - action: utter_queDodecagono
+
+  - rule: Calculadora
+    steps:
+      - intent: calculadora
+      - action: action_calculadora
+
+  - rule: mateayuda
+    steps:
+      - intent: queMateayuda
+      - action: utter_mateayuda
+
+  - rule: poligono
+    steps:
+      - intent: quePoligono
+      - action: utter_poligono

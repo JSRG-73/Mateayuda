@@ -36,14 +36,14 @@ intents:
   - queDecagono
   - queUndecagono
   - queDodecagono
+  - queMateayuda
+  - quePoligono
 
 ####entidades usadas en los intens
 entities:
-  - numeroA
-  - numeroB
-  - signo
   - opinion
-  - numero
+  - numeroA
+  - signo
   - numeros
   - figura
   - figuras
@@ -74,6 +74,8 @@ entities:
   - decagono
   - undecagono
   - dodecagono
+  - mateayuda
+  - poligono
 
 ####respuestas del bot, aqui deben estar definidas.
 ####Siempre se usa utter_ para referirnos a respuestas
@@ -84,17 +86,17 @@ responses:
     - text: "Te saludo soy Roboto"
 
   utter_agradece:
-    - text: No hay problema !
-    - text: No es problema alguno
+    - text: "😉 "
+    - text: "no es problema alguno "
 
   utter_miNumero:
     - text: "Mi número favorito es el 7 de la suerte"
 
   utter_miFigura:
-    - text: "Mi figura favorita es el circulo, me recuerda al helado"
+    - text: "Mi figura favorita es el círculo, me recuerda al helado"
 
   utter_miOperacion:
-    - text: "Mi figura favorita es el círculo, me recuerda al helado"
+    - text: "Mi operación favorita es la suma, es facilísima"
 
   utter_pi:
     - text: "3.1415.. no quiero contar el resto es muy largo"
@@ -104,7 +106,7 @@ responses:
 
   utter_opinion:
     - text: "Opino que es un tema interesante"
-    - text: "uhmm Opino que es un tema increible"
+    - text: "Opino que es un tema llamativo"
 
   utter_queSuma:
     - text: "Las sumas son así:"
@@ -127,19 +129,19 @@ responses:
       image: "https://sites.google.com/site/figuritasgeometricas/_/rsrc/1339206194345/circulo/circulo.jpg?height=344&width=375"
 
   utter_queTriangulo:
-    - text: "El triángulo es así:"
+    - text: "El triángulo tiene 3 lados y es así:"
       image: "https://sites.google.com/site/figurasgoe/_/rsrc/1340592315242/triangulo/tri.png?height=348&width=368"
 
   utter_queRectangulo:
-    - text: "El rectángulo es así:"
+    - text: "El rectángulo tiene 4 lados y es así:"
       image: "https://illustoon.com/photo/7416.png"
 
   utter_queCuadrado:
-    - text: "El cuadrado es así:"
+    - text: "El cuadrado tiene 4 lados y es así:"
       image: "https://www.smartick.es/blog/wp-content/uploads/cuadrado-222x201.png"
 
   utter_queRombo:
-    - text: "El rombo es así:"
+    - text: "El rombo tiene 4 lados y es así:"
       image: "https://i.pinimg.com/236x/1d/2c/00/1d2c002904459c309444fbf776fb0fb8--flash-material.jpg"
 
   utter_queOvalo:
@@ -147,45 +149,46 @@ responses:
       image: "https://i.pinimg.com/550x/2e/16/d3/2e16d3ca723a85859e87eb0f353828fa.jpg"
 
   utter_queTrapecio:
-    - text: "El trapecio es así:"
+    - text: "El trapecio tiene 4 lados y es así:"
       image: "https://conceptoabc.com/wp-content/uploads/2022/05/Trapecio.jpg"
 
   utter_quePentagono:
-    - text: "El pentágono es así:"
+    - text: "El pentágono tiene 5 lados y es así:"
       image: "https://d3lqdljps13i2n.cloudfront.net/recursos/77/2492749/imagen_1_1467519576.jpg"
 
   utter_queHexagono:
-    - text: "El hexágono es así:"
+    - text: "El hexágono tiene 6 lados y es así:"
       image: "http://m.innatia.info/images/galeria/hexagono-0.png"
 
   utter_queHeptagono:
-    - text: "El heptágono es así:"
+    - text: "El heptágono tiene 7 lados y es así:"
       image: "https://www.lifeder.com/wp-content/uploads/2022/03/heptagno-imagen.png"
 
   utter_queOctagono:
-    - text: "El octágono es así:"
+    - text: "El octágono tiene 8 lados y es así:"
       image: "https://www.curriculumnacional.cl/614/articles-26139_thumbnail.jpg"
 
   utter_queEneagono:
-    - text: "El eneágono es así:"
+    - text: "El eneágono tiene 9 lados y es así:"
       image: "https://cursa.ihmc.us/rid=1KPYJ5VH0-FCDRGY-19S0/ENEAGONO.jpg"
 
   utter_queDecagono:
-    - text: "El decágono es así:"
+    - text: "El decágono tiene 10 lados y es así:"
       image: "https://i.pinimg.com/originals/60/12/4a/60124adb6edeb12db73a511a1c0753ca.jpg"
 
   utter_queUndecagono:
-    - text: "El undecágono es así:"
+    - text: "El undecágono tiene 11 lados y es así:"
       image: "https://live.staticflickr.com/7306/12793849945_9f556b9d54_m.jpg"
 
   utter_queDodecagono:
-    - text: "El dodecágono es así:"
+    - text: "El dodecágono tiene 12 lados y es así:"
       image: "https://www.seekpng.com/png/detail/354-3546154_cuantos-lados-tiene-un-dodecagono.png"
 
   utter_animar:
     - text: "Las matemáticas son divertidas, estoy seguro que lo lograrás"
 
   utter_feliz:
+    - text: " 😲"
     - text: "Wow"
     - text: "Vaya"
     - text: "Oh"
@@ -194,12 +197,20 @@ responses:
     - text: "Bye"
 
   utter_soyBot:
-    - text: "Soy un robot. Vivo en Mateayuda. Me llamo Roboto"
+    - text: "Soy un robot. Mi hogar es Mateayuda. Me llamo Roboto"
+
+  utter_mateayuda:
+    - text: "Plataforma orientada al aprendizaje infantil.🤓"
+
+  utter_poligono:
+    - text: "Figuritas: "
+      image: "https://concepto.de/wp-content/uploads/2022/05/poligono-e1652196518205.jpg"
 
   utter_default:
-    - text: "Siri y Alexa son mis hermanas mayores, no me confundas con ellas"
-    - text: "Te hablan Siri"
-    - text: "Te hablan Alexa"
+    - text: " 🤔"
+
+actions:
+  - action_calculadora
 
 ####palabras reservadas
 session_config:

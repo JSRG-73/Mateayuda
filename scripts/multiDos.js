@@ -59,7 +59,7 @@ function destapar(id){
                     mostrarMovimientos.innerHTML = 'Movimientos: '+movimientos+'🙂';
                     setTimeout(()=>{
                         location.reload()
-                    },1000);
+                    },200);
                 }
 
             } else{
@@ -71,7 +71,7 @@ function destapar(id){
                     tarjeta2.disabled = false;
                     targetasDestapadas = 0;
                     //window.alert(targetasDestapadas)
-                },1000);
+                },200);
 
             }
             targetasDestapadas = 0
